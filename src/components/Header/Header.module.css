@@ -1,0 +1,35 @@
+.nav {
+	height: 5rem;
+	max-width: 100%;
+	padding-right: 2rem;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: white;
+	font-size: 2rem;
+	display: flex;
+}
+
+.nav ul {
+	display: flex;
+	gap: 3rem;
+	font-size: 2rem;
+	list-style: none;
+}
+
+.nav__link:link,
+.nav__link:visited {
+	color: white;
+	text-decoration: none;
+	transition: all 0.1s;
+}
+
+.nav__link:hover,
+.nav__link:active {
+	color: orange;
+	text-decoration: none;
+}
