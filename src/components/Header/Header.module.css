@@ -1,8 +1,14 @@
+header {
+	background-image: url(../../assets/images/background_header.jpg);
+	background-size: cover;
+	background-position: 25% 50%;
+	height: 40rem;
+}
+
 .nav {
 	height: 5rem;
 	max-width: 100%;
 	padding-right: 2rem;
-	background-color: black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
