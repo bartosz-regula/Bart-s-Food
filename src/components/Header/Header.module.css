@@ -1,8 +1,15 @@
 header {
 	background-image: url(../../assets/images/background_header.jpg);
 	background-size: cover;
-	background-position: 25% 50%;
-	height: 40rem;
+	background-position: 25% 62%;
+	height: 70vh;
+}
+
+header img {
+	scale: 0.07;
+	position: absolute;
+	top: -55rem;
+	left: -54rem;
 }
 
 .nav {
@@ -10,14 +17,8 @@ header {
 	max-width: 100%;
 	padding-right: 2rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-}
-
-.logo {
-	color: white;
-	font-size: 2rem;
-	display: flex;
 }
 
 .nav ul {
@@ -25,6 +26,7 @@ header {
 	gap: 3rem;
 	font-size: 2rem;
 	list-style: none;
+	padding-top: 3rem;
 }
 
 .nav__link:link,

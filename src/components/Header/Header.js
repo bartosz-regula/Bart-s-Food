@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../assets/images/bartsfood_logo.png';
 import classes from './Header.module.css';
 
 
@@ -7,8 +8,8 @@ const Header = () => {
 	return (
 		<>
 			<header>
+				<img src={logo} alt="Logo" />
 				<nav className={classes.nav}>
-					<span className={classes.logo}>Logo</span>
 					<ul>
 						<li><a
 							className={classes.nav__link}
@@ -28,7 +29,6 @@ const Header = () => {
 							target="_blank"
 							rel="noreferrer">What's up</a>
 						</li>
-
 					</ul>
 				</nav>
 			</header>
