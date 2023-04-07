@@ -1,0 +1,97 @@
+.container {
+	background-color: white;
+	border: 1px solid rgb(206, 206, 206);
+	border-radius: 14px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.6rem;
+}
+
+.content {
+	margin: 3rem;
+}
+
+.header {
+	/* border-bottom: 0.1px solid #727272; */
+}
+
+.header h2 {
+	display: flex;
+	justify-content: space-between;
+	font-size: 2.8rem;
+	margin-bottom: 1.2rem;
+}
+
+.header p {
+	text-align: center;
+	margin-bottom: 4rem;
+	color: orange;
+}
+
+.cart_items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 0.1px solid #d4d2d2;
+}
+
+.form {
+	display: flex;
+	gap: 1rem;
+}
+
+.form label {
+	color: #333;
+	font-weight: 100;
+	font-size: 1.2rem;
+}
+
+.form input {
+	color: #333;
+	border: none;
+	border-radius: 0.4rem;
+	font-size: 1.4rem;
+}
+
+.form button {
+	scale: 1.4;
+	color: #dc0000;
+	background-color: transparent;
+	border: none;
+}
+
+.summary {
+	margin-top: 2rem;
+	text-align: center; /* add this property */
+}
+
+.subtotal {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.4rem;
+	font-weight: 200;
+}
+
+.subtotal:first-child {
+	font-weight: 600;
+}
+
+.total {
+	margin-top: 3rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+}
+
+.summary button {
+	margin-top: 3rem;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #dc0000;
+	border: 1px solid #ad0000;
+	color: white;
+	padding: 1.5rem 10.5rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}

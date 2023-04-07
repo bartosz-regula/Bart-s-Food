@@ -41,7 +41,7 @@ const MealsMenu = () => {
 			<div className={classes.meal}>
 				<h3>{meal.name}</h3>
 				<p>{meal.description}</p>
-				<div className={classes.price}>{meal.price}</div>
+				<div className={classes.price}>from {meal.price}</div>
 			</div>
 			<form className={classes.form}>
 				<label>Amount</label>

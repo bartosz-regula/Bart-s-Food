@@ -1,6 +1,5 @@
 .container {
 	max-width: 95%;
-	color: #242e30;
 	border: 1px solid rgb(206, 206, 206);
 	background-color: white;
 	border-radius: 14px;
@@ -43,10 +42,6 @@
 	color: #dc0000;
 	font-weight: 700;
 	line-height: 1.5;
-}
-
-.form {
-	/* background-color: green; */
 }
 
 .form label {

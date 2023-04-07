@@ -1,7 +1,8 @@
 import React from 'react'
 import classes from './MealsSection.module.css'
-import MealsCategory from './MealsCategory';
-import MealsMenu from './MealsMenu';
+import MealsCategory from './Meals/MealsCategory';
+import MealsMenu from './Meals/MealsMenu';
+import Cart from '../Cart/Cart'
 
 
 const MealsSection = () => {
@@ -9,6 +10,7 @@ const MealsSection = () => {
 		<div className={classes['meals-container']}>
 			<MealsCategory />
 			<MealsMenu></MealsMenu>
+			<Cart></Cart>
 		</div>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './components/Header/Header'
-import MealsSection from './components/Meals/MealsSection'
+import MealsSection from './components/MealsSection/MealsSection'
 
 const App = () => {
 	return (
