@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './MealsCategory.module.css'
 
-const DUMMY_MEALS = [
+const DUMMY_CATEGORY = [
 	{
 		id: 'c1',
 		name: 'Burger',
@@ -46,7 +46,7 @@ const DUMMY_MEALS = [
 
 const MealsCategory = () => {
 
-	const mealsList = DUMMY_MEALS.map(category => (
+	const categoryList = DUMMY_CATEGORY.map(category => (
 		<li>
 			<a href='#' id={category.id}>{category.name}</a>
 		</li>));
@@ -54,7 +54,7 @@ const MealsCategory = () => {
 	return (
 		<div className={classes['meals-category']}>
 			<ul>
-				{mealsList}
+				{categoryList}
 			</ul>
 		</div>
 	)

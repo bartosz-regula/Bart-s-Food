@@ -18,6 +18,10 @@
 	align-items: center;
 }
 
+.card:last-child {
+	border-bottom: none;
+}
+
 .meal {
 	/* padding: 2rem; */
 }
