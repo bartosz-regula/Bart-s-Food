@@ -1,0 +1,65 @@
+.container {
+	max-width: 95%;
+	color: #242e30;
+	border: 1px solid rgb(206, 206, 206);
+	background-color: white;
+	border-radius: 14px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	margin: 4rem;
+	color: black;
+
+	border-bottom: 0.1px solid #727272;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.meal {
+	/* padding: 2rem; */
+}
+
+.meal h3 {
+	font-size: 2rem;
+}
+
+.meal p {
+	font-size: 1.6rem;
+	color: #727272;
+	margin-top: 0.8rem;
+	font-style: italic;
+}
+
+.price {
+	font-size: 1.6rem;
+	margin-top: 0.8rem;
+	color: #dc0000;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.form {
+	/* background-color: green; */
+}
+
+.form label {
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+
+.form input {
+	margin-right: 1.5rem;
+}
+
+.form button {
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #dc0000;
+	border: 1px solid #ad0000;
+	color: white;
+	padding: 0.5rem 2.5rem;
+	font-weight: bold;
+}
