@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: 15% 2fr 1fr;
 	margin: 0 auto;
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 82px;
+	padding-right: 82px;
 	width: 100%;
 }
