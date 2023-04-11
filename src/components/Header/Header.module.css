@@ -24,7 +24,7 @@ header img {
 .nav ul {
 	display: flex;
 	gap: 3rem;
-	font-size: 2rem;
+	font-size: 3.5rem;
 	list-style: none;
 	padding-top: 3rem;
 }

@@ -11,23 +11,31 @@ const Header = () => {
 				<img src={logo} alt="Logo" />
 				<nav className={classes.nav}>
 					<ul>
-						<li><a
-							className={classes.nav__link}
-							href='https://www.facebook.com'
-							target="_blank"
-							rel="noreferrer">Facebook</a>
+						<li>
+							<a
+								className={classes.nav__link}
+								href='https://www.facebook.com'
+								target="_blank"
+								rel="noreferrer">
+								<ion-icon name="logo-facebook"></ion-icon></a>
 						</li>
-						<li><a
-							className={classes.nav__link}
-							href='https://www.instagram.com'
-							target="_blank"
-							rel="noreferrer">Instagram</a>
+						<li>
+							<a
+								className={classes.nav__link}
+								href='https://www.instagram.com'
+								target="_blank"
+								rel="noreferrer">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</a>
 						</li>
-						<li><a
-							className={classes.nav__link}
-							href='https://www.whatsapp.com'
-							target="_blank"
-							rel="noreferrer">What's up</a>
+						<li>
+							<a
+								className={classes.nav__link}
+								href='https://www.tiktok.com'
+								target="_blank"
+								rel="noreferrer">
+								<ion-icon name="logo-tiktok"></ion-icon>
+							</a>
 						</li>
 					</ul>
 				</nav>
