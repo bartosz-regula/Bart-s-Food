@@ -1,0 +1,49 @@
+footer {
+	padding: 3rem 0rem;
+	background-color: #efedea;
+	height: 17rem;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10rem;
+	margin: 0rem 5rem;
+}
+
+footer img {
+	margin-top: 1.5rem;
+	height: 4rem;
+	margin-right: 2rem;
+}
+
+.store_images {
+	display: flex;
+}
+
+.payment_images {
+	padding-top: 1.5rem;
+	padding-left: 6rem;
+	scale: 2;
+}
+
+.contact_container {
+}
+
+.contact_container p {
+	margin-top: 1.5rem;
+	font-size: 1.6rem;
+	font-weight: 100;
+}
+
+.contact_details {
+	/* display: flex; */
+}
+
+.copyright {
+	font-weight: 400;
+	font-size: 1.2rem;
+	margin-left: 2rem;
+}
