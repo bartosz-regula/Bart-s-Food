@@ -4,6 +4,7 @@ import google_play from '../../assets/images/google-play.png';
 import app_store from '../../assets/images/app-store.png';
 import app_gallery from '../../assets/images/huawei.png';
 import paymentOperators from '../../assets/images/paymentsOperators.png'
+import OurApps from './OurApps';
 
 
 const Footer = () => {
@@ -13,22 +14,21 @@ const Footer = () => {
 				<div>
 					<p>Download our apps</p>
 					<div className={classes.store_images}>
-						<div>
-							<a href='https://www.apple.com/pl/app-store'>
-								<img src={app_store} alt='App Store logo'></img>
-							</a>
-						</div>
-						<div>
-							<a href='https://play.google.com/store'>
-								<img src={google_play} alt='Google Play logo'></img>
-							</a>
-						</div>
-						<div>
-							<a href='https://appgallery.huawei.com/Featured'>
-								<img src={app_gallery} alt='App Gallery logo'></img>
-							</a>
-						</div>
+						<OurApps
+							href='https://www.apple.com/pl/app-store'
+							src={app_store}
+							alt='App Store logo' />
+						<OurApps
+							href='https://play.google.com/store'
+							src={google_play}
+							alt='Google Play logo' />
+						<OurApps
+							href='https://appgallery.huawei.com/Featured'
+							src={app_gallery}
+							alt='App Gallery logo' />
 					</div>
+
+
 				</div>
 
 				<div className={classes.contact_container}>
