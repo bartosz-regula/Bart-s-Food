@@ -7,7 +7,7 @@ import Cart from './Cart/Cart'
 
 const Main = () => {
 	return (
-		<div className={classes['meals-container']}>
+		<div className={classes['main-container']}>
 			<MealsCategory />
 			<MealsMenu></MealsMenu>
 			<Cart></Cart>

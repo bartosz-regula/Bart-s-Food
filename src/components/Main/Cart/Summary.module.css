@@ -1,0 +1,23 @@
+.summary {
+	margin-top: 2rem;
+	text-align: center; /* add this property */
+}
+
+.subtotal {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.4rem;
+	font-weight: 200;
+}
+
+.subtotal:first-child {
+	margin-top: 1.8rem;
+	font-weight: 600;
+}
+
+.total {
+	margin-top: 3rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,4 +1,4 @@
-.meals-container {
+.main-container {
 	display: grid;
 	grid-template-columns: 15% 2fr 1fr;
 	margin: 0 auto;

@@ -52,7 +52,7 @@ const MealsCategory = () => {
 		</li>));
 
 	return (
-		<div className={classes['meals-category']}>
+		<div className={classes.meals_category}>
 			<ul>
 				{categoryList}
 			</ul>

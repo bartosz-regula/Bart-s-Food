@@ -1,29 +1,27 @@
-.meals-category {
+.meals_category {
 	font-size: 1.6rem;
 	margin-top: 5rem;
 }
 
-.meals-category li {
+.meals_category li {
 	list-style: none;
-	/* border-left: 1px solid #dbd9d7; */
 }
 
-.meals-category a {
-	padding: 0.8rem 1.6rem;
-	border-left: 1px solid #dbd9d7;
-	padding-left: 1rem;
+.meals_category a {
+	padding: 1.1rem 1.8rem;
+	border-left: 0.2rem solid #dbd9d7;
 	display: block;
 }
 
-.meals-category a:link,
-.meals-category a:visited {
+.meals_category a:link,
+.meals_category a:visited {
 	text-decoration: none;
 	color: #242e30;
 	white-space: nowrap;
 }
 
-.meals-category a:hover,
-.meals-category a:active {
+.meals_category a:hover,
+.meals_category a:active {
 	color: orange; /* kolor tekstu dla linków nieodwiedzonych */
 	border-left: 1px solid red;
 }

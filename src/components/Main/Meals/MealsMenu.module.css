@@ -10,7 +10,6 @@
 .card {
 	margin: 4rem;
 	color: black;
-
 	border-bottom: 0.1px solid #727272;
 	display: flex;
 	justify-content: space-between;
@@ -19,10 +18,6 @@
 
 .card:last-child {
 	border-bottom: none;
-}
-
-.meal {
-	/* padding: 2rem; */
 }
 
 .meal h3 {

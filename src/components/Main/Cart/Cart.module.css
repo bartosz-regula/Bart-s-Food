@@ -61,9 +61,9 @@
 	border: none;
 }
 
-.summary {
+/* .summary {
 	margin-top: 2rem;
-	text-align: center; /* add this property */
+	text-align: center; 
 }
 
 .subtotal {
@@ -82,7 +82,7 @@
 	font-weight: 600;
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
 .summary button {
 	margin-top: 3rem;

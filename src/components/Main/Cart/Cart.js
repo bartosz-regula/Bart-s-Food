@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from '../Cart/Cart.module.css'
+import Summary from './Summary';
 
 const DUMMY_CART = [
 	{
@@ -60,30 +61,36 @@ const Cart = () => {
 				{cartList}
 
 				<div className={classes.summary} >
-					<div className={classes.subtotal}>
-						<span>Subtotal</span>
-						<span>£37.50</span>
-					</div>
-					<div className={classes.subtotal}>
-						<span>20% discount</span>
-						<span>-£37.50</span>
-					</div>
-					<div className={classes.subtotal}>
-						<span>Bag fee</span>
-						<span>£0.10</span>
-					</div>
-					<div className={classes.subtotal}>
-						<span>Service charge</span>
-						<span>£0.50</span>
-					</div>
-					<div className={classes.subtotal}>
-						<span>Delivery fee</span>
-						<span>£0.00</span>
-					</div>
-					<div className={classes.total}>
-						<span>Total</span>
-						<span>£37.50</span>
-					</div>
+					<Summary
+						name='Subtotal'
+						price='£37.50'
+						className='subtotal'>
+					</Summary>
+					<Summary
+						name='20% discount'
+						price='£17.50'
+						className='subtotal'>
+					</Summary>
+					<Summary
+						name='Bag fee'
+						price='£0.50'
+						className='subtotal'>
+					</Summary>
+					<Summary
+						name='Service charge'
+						price='£0.50'
+						className='subtotal'>
+					</Summary>
+					<Summary
+						name='Delivery fee'
+						price='£0.00'
+						className='subtotal'>
+					</Summary>
+					<Summary
+						name='Total'
+						price='£37.50'
+						className='total'>
+					</Summary>
 					<button>Go to checkout</button>
 				</div>
 
