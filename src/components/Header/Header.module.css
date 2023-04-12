@@ -1,18 +1,18 @@
-header {
+.header {
 	background-image: url(../../assets/images/background_header.jpg);
 	background-size: cover;
 	background-position: 25% 62%;
 	height: 70vh;
 }
 
-header img {
+.header img {
 	scale: 0.07;
 	position: absolute;
 	top: -55rem;
 	left: -54rem;
 }
 
-.nav {
+/* .nav {
 	height: 5rem;
 	max-width: 100%;
 	padding-right: 2rem;
@@ -40,4 +40,4 @@ header img {
 .nav__link:active {
 	color: orange;
 	text-decoration: none;
-}
+} */

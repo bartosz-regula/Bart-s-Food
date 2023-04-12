@@ -34,7 +34,7 @@ const Footer = () => {
 				<div className={classes.contact_container}>
 					<div>Contact us</div>
 					<div className={classes.contact_details}>
-						<p><ion-icon name="home"></ion-icon>9748 Abingdon St, London SW1P 3JY</p>
+						<p><ion-icon name="home"></ion-icon> 9748 Abingdon St, London SW1P 3JY</p>
 						<p><ion-icon name="mail"></ion-icon> bartsfood@gmail.com</p>
 						<p><ion-icon name="call"></ion-icon> 7424441519</p>
 					</div>

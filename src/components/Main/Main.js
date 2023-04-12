@@ -1,11 +1,11 @@
 import React from 'react'
-import classes from './MealsSection.module.css'
+import classes from './Main.module.css'
 import MealsCategory from './Meals/MealsCategory';
 import MealsMenu from './Meals/MealsMenu';
 import Cart from './Cart/Cart'
 
 
-const MealsSection = () => {
+const Main = () => {
 	return (
 		<div className={classes['meals-container']}>
 			<MealsCategory />
@@ -15,4 +15,4 @@ const MealsSection = () => {
 	)
 }
 
-export default MealsSection;
+export default Main;

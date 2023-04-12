@@ -1,0 +1,10 @@
+.navigation_content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+	gap: 3rem;
+	font-size: 4rem;
+	padding-top: 3rem;
+	padding-right: 2rem;
+}
