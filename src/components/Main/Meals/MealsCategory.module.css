@@ -27,6 +27,11 @@
 
 .meals_category a:hover,
 .meals_category a:active {
-	color: orange; /* kolor tekstu dla linków nieodwiedzonych */
-	border-left: 1px solid red;
+	color: orange;
+	border-left: 2px solid orange;
+}
+
+.meals_category .active a {
+	color: orange;
+	border-left: 2px solid orange;
 }

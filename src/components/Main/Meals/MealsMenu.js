@@ -8,8 +8,8 @@ const MealsMenu = () => {
 	return (
 		<div>
 			<MealsMenuItem category='Burgers' />
-			<MealsMenuItem category='Kebabs' />
 			<MealsMenuItem category='Pizzas' />
+			<MealsMenuItem category='Kebabs' />
 			<MealsMenuItem category='Wraps' />
 			<MealsMenuItem category='Pittas' />
 			<MealsMenuItem category='Sandwiches' />

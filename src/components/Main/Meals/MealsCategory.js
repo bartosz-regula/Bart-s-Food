@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import React from 'react'
 import classes from './MealsCategory.module.css'
 
@@ -44,29 +45,22 @@ const MEALS = [
 	},
 ];
 
-const MealsCategory = (props) => {
+const MealsCategory = () => {
+	const [activeCategory, setActiveCategory] = useState(null);
 
-	const categoryList = MEALS.map(category => (
-		<li>
-			<a href={category.id}>{category.name}</a>
-		</li>));
-
+	const categoryList = MEALS.map((category) => (
+		<li className={category.id === activeCategory ? classes.active : null}>
+			<a href={category.id} onClick={() => setActiveCategory(category.id)}>
+				{category.name}
+			</a>
+		</li>
+	));
 
 	return (
 		<div className={classes.meals_category}>
-			<ul>
-				{categoryList}
-			</ul>
+			<ul>{categoryList}</ul>
 		</div>
-	)
-}
+	);
+};
 
 export default MealsCategory;
-
-
-/*
-href="#starters"
-scrollactive item
-
-<h2 id="starters"
-*/
