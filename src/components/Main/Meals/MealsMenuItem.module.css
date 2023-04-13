@@ -7,6 +7,13 @@
 	margin-bottom: 2rem;
 }
 
+.container h2 {
+	padding-top: 4rem;
+	margin-top: -2rem;
+	text-align: center;
+	font-size: 2.6rem;
+}
+
 .card {
 	margin: 4rem;
 	color: black;
@@ -32,7 +39,6 @@
 .meal p {
 	font-size: 1.6rem;
 	color: #727272;
-	/* margin-top: 0.8rem; */
 	padding: 1rem 0;
 	font-style: italic;
 }

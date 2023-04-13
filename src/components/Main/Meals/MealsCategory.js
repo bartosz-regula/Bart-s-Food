@@ -3,42 +3,42 @@ import classes from './MealsCategory.module.css'
 
 const MEALS = [
 	{
-		id: 'c1',
+		id: '#Burgers',
 		name: 'Burgers',
 
 	},
 	{
-		id: 'c2',
+		id: '#Pizzas',
 		name: 'Pizzas',
 
 	},
 	{
-		id: 'c3',
+		id: '#Kebabs',
 		name: 'Kebabs',
 
 	},
 	{
-		id: 'c4',
+		id: '#Wraps',
 		name: 'Wraps',
 
 	},
 	{
-		id: 'c5',
+		id: '#Pittas',
 		name: 'Pittas',
 
 	},
 	{
-		id: 'c7',
+		id: '#Sandwiches',
 		name: 'Sandwiches',
 
 	},
 	{
-		id: 'c7',
+		id: '#Beef Dogs',
 		name: 'Beef Dogs',
 
 	},
 	{
-		id: 'c8',
+		id: '#Salads',
 		name: 'Salads',
 
 	},
@@ -48,7 +48,7 @@ const MealsCategory = (props) => {
 
 	const categoryList = MEALS.map(category => (
 		<li>
-			<a href='#' id={category.id}>{category.name}</a>
+			<a href={category.id}>{category.name}</a>
 		</li>));
 
 

@@ -41,7 +41,7 @@ const MealsMenuItem = (props) => {
 	return (
 
 		<div className={classes.container}>
-			<h2>{props.category}</h2>
+			<h2 id={props.category}>{props.category}</h2>
 			{mealsList}
 		</div>
 	)

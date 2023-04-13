@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import classes from './Main.module.css'
 import MealsCategory from './Meals/MealsCategory';
 import MealsMenu from './Meals/MealsMenu';
