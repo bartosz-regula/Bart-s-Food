@@ -3,6 +3,11 @@
 	margin-top: 5rem;
 }
 
+.meals_category ul {
+	position: sticky;
+	top: 2rem;
+}
+
 .meals_category li {
 	list-style: none;
 }

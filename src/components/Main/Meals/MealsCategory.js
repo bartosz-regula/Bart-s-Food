@@ -1,55 +1,56 @@
 import React from 'react'
 import classes from './MealsCategory.module.css'
 
-const DUMMY_CATEGORY = [
+const MEALS = [
 	{
 		id: 'c1',
-		name: 'Burger',
+		name: 'Burgers',
 
 	},
 	{
 		id: 'c2',
-		name: 'Kebab',
+		name: 'Pizzas',
 
 	},
 	{
 		id: 'c3',
-		name: 'Barbecue Burger',
+		name: 'Kebabs',
 
 	},
 	{
 		id: 'c4',
-		name: 'Sides',
+		name: 'Wraps',
 
 	},
 	{
 		id: 'c5',
-		name: 'Dips',
+		name: 'Pittas',
 
 	},
 	{
 		id: 'c7',
-		name: 'Drinks',
+		name: 'Sandwiches',
 
 	},
 	{
 		id: 'c7',
-		name: 'Pizza',
+		name: 'Beef Dogs',
 
 	},
 	{
 		id: 'c8',
-		name: 'Hot-Dog',
+		name: 'Salads',
 
 	},
 ];
 
-const MealsCategory = () => {
+const MealsCategory = (props) => {
 
-	const categoryList = DUMMY_CATEGORY.map(category => (
+	const categoryList = MEALS.map(category => (
 		<li>
 			<a href='#' id={category.id}>{category.name}</a>
 		</li>));
+
 
 	return (
 		<div className={classes.meals_category}>
@@ -61,3 +62,11 @@ const MealsCategory = () => {
 }
 
 export default MealsCategory;
+
+
+/*
+href="#starters"
+scrollactive item
+
+<h2 id="starters"
+*/
