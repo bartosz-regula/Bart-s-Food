@@ -18,12 +18,12 @@ const MealsMenuItem = (props) => {
 		getFood();
 	}, [])
 
-	const mealsList = food.map(({ id, category, name, description, price }) => (
-		<div className={classes.card}>
+	const mealsList = food.map(({ id, name, description, price }) => (
+		<li className={classes.card}>
 			<div className={classes.meal} id={id}>
 				<h3>{name}</h3>
 				<p>{description}</p>
-				<div className={classes.price}>from £{price}</div>
+				<div className={classes.price}>from £{price.toFixed(2)}</div>
 			</div>
 			<form className={classes.form}>
 				<label>Amount</label>
@@ -35,14 +35,16 @@ const MealsMenuItem = (props) => {
 					defaultValue='1' />
 				<button>Add</button>
 			</form>
-		</div>
+		</li>
 	));
 
 	return (
 
 		<div className={classes.container}>
 			<h2 id={props.category}>{props.category}</h2>
-			{mealsList}
+			<ul>
+				{mealsList}
+			</ul>
 		</div>
 	)
 }

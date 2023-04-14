@@ -57,9 +57,9 @@ const Cart = () => {
 					</h2>
 					<p> 10£ missing to free delivery</p>
 				</div>
-
-				{cartList}
-
+				<section>
+					{/* {cartList} */}
+				</section>
 				<div className={classes.summary} >
 					<Summary
 						name='Subtotal'

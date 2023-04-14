@@ -15,6 +15,12 @@ const MealsMenu = () => {
 			<MealsMenuItem category='Sandwiches' />
 			<MealsMenuItem category='Beef Dogs' />
 			<MealsMenuItem category='Salads' />
+			<MealsMenuItem category='Kids Meal' />
+			<MealsMenuItem category='Piri Piri' />
+			<MealsMenuItem category='Dips' />
+			<MealsMenuItem category='Soft Drinks' />
+			<MealsMenuItem category='Beers' />
+			<MealsMenuItem category='Desserts' />
 		</div>
 	)
 }
