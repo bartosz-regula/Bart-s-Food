@@ -1,0 +1,14 @@
+.form {
+	display: flex;
+	align-items: center;
+}
+
+.form button {
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #dc0000;
+	border: 1px solid #ad0000;
+	color: white;
+	padding: 0.5rem 2.5rem;
+	font-weight: bold;
+}

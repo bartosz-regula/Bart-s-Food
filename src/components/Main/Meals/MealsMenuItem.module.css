@@ -50,27 +50,3 @@
 	font-weight: 700;
 	line-height: 1.5;
 }
-
-.form {
-	display: flex;
-	align-items: center;
-}
-
-.form label {
-	font-size: 1.5rem;
-	margin-right: 1rem;
-}
-
-.form input {
-	margin-right: 1.5rem;
-}
-
-.form button {
-	border-radius: 20px;
-	cursor: pointer;
-	background-color: #dc0000;
-	border: 1px solid #ad0000;
-	color: white;
-	padding: 0.5rem 2.5rem;
-	font-weight: bold;
-}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import React from 'react'
+import MealsMenuItemForm from "./MealsMenuItemForm";
 import classes from './MealsMenuItem.module.css'
 import supabase from '../../../supabase';
 
@@ -25,7 +26,7 @@ const MealsMenuItem = (props) => {
 				<p>{description}</p>
 				<div className={classes.price}>from £{price.toFixed(2)}</div>
 			</div>
-			<form className={classes.form}>
+			{/* <form className={classes.form}>
 				<label>Amount</label>
 				<input
 					type='number'
@@ -34,7 +35,10 @@ const MealsMenuItem = (props) => {
 					step='1'
 					defaultValue='1' />
 				<button>Add</button>
-			</form>
+			</form> */}
+			<div>
+				<MealsMenuItemForm />
+			</div>
 		</li>
 	));
 
