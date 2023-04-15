@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './NavItem.module.css'
+import classes from './NavBarButton.module.css'
 
-const NavItem = (props) => {
+const NavBarButton = (props) => {
 	return (
 		<li>
 			<a
@@ -16,4 +16,4 @@ const NavItem = (props) => {
 	)
 }
 
-export default NavItem;
+export default NavBarButton;

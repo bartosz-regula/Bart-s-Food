@@ -1,18 +1,18 @@
 import React from 'react'
 import classes from './NavBar.module.css'
-import NavItem from './NavItem';
+import NavBarButton from './NavBarButton';
 
 const NavBar = () => {
 	return (
 		<nav >
 			<ul className={classes.navigation_content}>
-				<NavItem
+				<NavBarButton
 					icon="logo-facebook"
 					href='https://www.facebook.com' />
-				<NavItem
+				<NavBarButton
 					icon="logo-instagram"
 					href='https://www.instagram.com' />
-				<NavItem
+				<NavBarButton
 					icon="logo-tiktok" href='https://www.tiktok.com' />
 			</ul>
 		</nav>

@@ -3,7 +3,8 @@ import React from 'react'
 
 const OurApps = (props) => {
 	return (
-		<a href={props.href}>
+		<a href={props.href} target="_blank" rel="noreferrer"
+		>
 			<img src={props.src} alt={props.alt}></img>
 		</a>
 	)
