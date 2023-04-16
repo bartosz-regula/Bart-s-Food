@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import React from 'react'
-import MealsMenuItemForm from "./MealsMenuItemForm";
+import Form from "../../UI/Form";
 import classes from './MealsMenuItem.module.css'
 import supabase from '../../../supabase';
 
@@ -20,27 +20,17 @@ const MealsMenuItem = (props) => {
 	}, [])
 
 	const mealsList = food.map(({ id, name, description, price }) => (
-		<li className={classes.card}>
-			<div className={classes.meal} id={id}>
+		<li className={classes.card} key={id}>
+			<div className={classes.meal} id={id} >
 				<h3>{name}</h3>
 				<p>{description}</p>
 				<div className={classes.price}>from £{price.toFixed(2)}</div>
 			</div>
-			{/* <form className={classes.form}>
-				<label>Amount</label>
-				<input
-					type='number'
-					min='1'
-					max='12'
-					step='1'
-					defaultValue='1' />
-				<button>Add</button>
-			</form> */}
-			<div>
-				<MealsMenuItemForm />
-			</div>
+			<Form />
 		</li>
 	));
+
+
 
 	return (
 

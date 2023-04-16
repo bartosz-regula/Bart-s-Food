@@ -1,0 +1,41 @@
+.test {
+	width: auto;
+	/* background-color: red; */
+	font-size: 1.6rem;
+}
+
+.test h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.test label {
+	margin-bottom: -1rem;
+}
+
+.test input {
+	display: block;
+	width: 100%;
+	background-color: rgb(227, 227, 252);
+	padding: 1rem;
+	/* margin: 1rem 0; */
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+	border-radius: 1.2rem;
+}
+
+.delivery {
+	font-size: 1.6rem;
+}
+
+.delivery button {
+	margin-top: 3rem;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #dc0000;
+	border: 1px solid #ad0000;
+	color: white;
+	padding: 1.2rem 10.5rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}

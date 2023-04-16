@@ -79,7 +79,7 @@ const MealsCategory = () => {
 	const [activeCategory, setActiveCategory] = useState('');
 
 	const categoryList = MEALS.map((category) => (
-		<li className={category.id === activeCategory ? classes.active : ''}>
+		<li className={category.id === activeCategory ? classes.active : ''} key={category.id}>
 			<a href={category.id} onClick={() => setActiveCategory(category.id)}>
 				{category.name}
 			</a>
@@ -94,70 +94,3 @@ const MealsCategory = () => {
 };
 
 export default MealsCategory;
-
-
-/*
-const MealsCategory = () => {
-	const [activeCategory, setActiveCategory] = useState('');
-
-	const categoryList = MEALS.map((category) => (
-		<li className={category.id === activeCategory ? classes.active : ''}>
-			<a href={category.id} onClick={() => setActiveCategory(category.id)}>
-				{category.name}
-			</a>
-		</li>
-	));
-
-	return (
-		<div className={classes.meals_category}>
-			<ul>{categoryList}</ul>
-		</div>
-	);
-};
-
-export default MealsCategory;
-*/
-
-
-/*
-const MealsCategory = () => {
-	const [activeCategory, setActiveCategory] = useState('');
-
-	const handleScroll = () => {
-		const sections = document.querySelectorAll('section');
-		sections.forEach((section) => {
-			const sectionTop = section.offsetTop - 200;
-			const sectionBottom = sectionTop + section.offsetHeight;
-			const scrollPosition = window.scrollY;
-
-			if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-				setActiveCategory(`#${section.id}`);
-			}
-		});
-	};
-
-	useEffect(() => {
-		window.addEventListener('scroll', handleScroll);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
-
-	const categoryList = MEALS.map((category) => (
-		<li className={category.id === activeCategory ? classes.active : ''}>
-			<a href={category.id} onClick={() => setActiveCategory(category.id)}>
-				{category.name}
-			</a>
-		</li>
-	));
-
-	return (
-		<div className={classes.meals_category}>
-			<ul>{categoryList}</ul>
-		</div>
-	);
-};
-
-export default MealsCategory;
-*/

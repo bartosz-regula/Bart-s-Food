@@ -58,7 +58,7 @@ const Cart = () => {
 					<p> 10£ missing to free delivery</p>
 				</div>
 				<section>
-					{/* {cartList} */}
+					{cartList}
 				</section>
 				<div className={classes.summary} >
 					<Summary
