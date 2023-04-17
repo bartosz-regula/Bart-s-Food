@@ -1,3 +1,14 @@
+.close_button {
+	position: absolute;
+	top: 1.5rem;
+	left: 39rem;
+	font-size: 2.5rem;
+	border: none;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+}
+
 .test {
 	width: auto;
 	/* background-color: red; */
@@ -16,20 +27,37 @@
 .test input {
 	display: block;
 	width: 100%;
-	background-color: rgb(227, 227, 252);
+	/* background-color: rgb(227, 227, 252); */
 	padding: 1rem;
-	/* margin: 1rem 0; */
 	margin-bottom: 2rem;
 	margin-top: 0.5rem;
 	border-radius: 1.2rem;
+	border: 1px solid rgb(184, 184, 184);
 }
 
 .delivery {
 	font-size: 1.6rem;
+	display: flex;
+	margin-bottom: 2rem;
+	border: 1px solid rgb(184, 184, 184);
+	padding: 1rem;
+	border-radius: 1.2rem;
 }
 
-.delivery button {
-	margin-top: 3rem;
+.delivery h4 {
+	margin-bottom: 0.5rem;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	font-size: 2.5rem;
+	color: #ad0000;
+}
+
+.button {
+	margin-top: 1rem;
 	border-radius: 20px;
 	cursor: pointer;
 	background-color: #dc0000;

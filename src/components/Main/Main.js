@@ -6,13 +6,13 @@ import Cart from './Cart/Cart'
 
 
 
-const Main = () => {
+const Main = (props) => {
 
 	return (
 		<div className={classes['main-container']}>
 			<MealsCategory />
 			<MealsMenu />
-			<Cart></Cart>
+			<Cart onShowCheckout={props.onShowCheckout} />
 		</div>
 	)
 }

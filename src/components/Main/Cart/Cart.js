@@ -23,7 +23,7 @@ const DUMMY_CART = [
 ];
 
 
-const Cart = () => {
+const Cart = (props) => {
 
 	const cartList = DUMMY_CART.map(item => (
 		<div className={classes.cart_items}>
@@ -91,7 +91,7 @@ const Cart = () => {
 						price='£37.50'
 						className='total'>
 					</Summary>
-					<button>Go to checkout</button>
+					<button onClick={props.onShowCheckout}>Go to checkout</button>
 				</div>
 
 			</div>

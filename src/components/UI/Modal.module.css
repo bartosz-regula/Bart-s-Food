@@ -16,9 +16,6 @@
 	background-color: white;
 	color: black;
 	padding: 5rem 6rem;
-	/* padding-left: 10rem;
-	padding-right: 50rem;
-	border-radius: 14px; */
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 	z-index: 30;
 	animation: slide-down 300ms ease-out forwards;
