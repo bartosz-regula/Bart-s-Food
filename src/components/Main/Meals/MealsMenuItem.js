@@ -1,14 +1,25 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import React from 'react'
-import Form from "../../UI/Form";
+import MealsMenuItemForm from "./MealsMenuItemForm";
 import classes from './MealsMenuItem.module.css'
 import supabase from '../../../supabase';
+import CartContext from "../../../context/cart-context";
 
 
 const MealsMenuItem = (props) => {
+	const cartCtx = useContext(CartContext)
 
 	const [food, setFood] = useState([])
 	const categoryName = props.category
+
+	const addToCartHandler = amount => {
+		cartCtx.addItem({
+			id: props.id,
+			name: props.name,
+			amount: amount,
+			price: props.price
+		})
+	}
 
 	useEffect(function () {
 		async function getFood() {
@@ -26,7 +37,7 @@ const MealsMenuItem = (props) => {
 				<p>{description}</p>
 				<div className={classes.price}>from £{price.toFixed(2)}</div>
 			</div>
-			<Form />
+			<MealsMenuItemForm onAddToCart={addToCartHandler} />
 		</li>
 	));
 

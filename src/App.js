@@ -4,6 +4,8 @@ import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 import Checkout from './components/Main/Cart/Checkout'
+import CartProvider from './context/CartProvider'
+import CartButton from './components/Main/Cart/CartButton'
 
 const App = () => {
 
@@ -20,14 +22,15 @@ const App = () => {
 
 
 	return (
-		<React.Fragment>
+		<CartProvider>
 			{checkoutIsShown && <Checkout onClose={hideCheckoutHandler} />}
 			<Header />
+			<CartButton />
 			<main>
 				<Main onShowCheckout={showCheckoutHandler} />
 			</main>
 			<Footer></Footer>
-		</React.Fragment>
+		</CartProvider>
 	)
 }
 
