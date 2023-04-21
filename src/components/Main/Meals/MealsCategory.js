@@ -80,7 +80,7 @@ const MealsCategory = () => {
 
 	const categoryList = MEALS.map((category) => (
 		<li className={category.id === activeCategory ? classes.active : ''} key={category.id}>
-			<a href={category.id} onClick={() => setActiveCategory(category.id)}>
+			<a href="#" onClick={() => setActiveCategory(category.id)}>
 				{category.name}
 			</a>
 		</li>

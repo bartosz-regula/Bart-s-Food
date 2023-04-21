@@ -9,8 +9,6 @@ import CartContext from "../../../context/cart-context";
 const MealsMenuItem = (props) => {
 	const cartCtx = useContext(CartContext)
 
-	const [food, setFood] = useState([])
-	const categoryName = props.category
 
 	const addToCartHandler = amount => {
 		cartCtx.addItem({
@@ -21,34 +19,19 @@ const MealsMenuItem = (props) => {
 		})
 	}
 
-	useEffect(function () {
-		async function getFood() {
-			const { data: Food, error } = await supabase
-				.from('Food').select('*').eq('category', categoryName);
-			setFood(Food);
-		}
-		getFood();
-	}, [])
-
-	const mealsList = food.map(({ id, name, description, price }) => (
-		<li className={classes.card} key={id}>
-			<div className={classes.meal} id={id} >
-				<h3>{name}</h3>
-				<p>{description}</p>
-				<div className={classes.price}>from £{price.toFixed(2)}</div>
-			</div>
-			<MealsMenuItemForm onAddToCart={addToCartHandler} />
-		</li>
-	));
-
-
-
 	return (
 
-		<div className={classes.container}>
-			<h2 id={props.category}>{props.category}</h2>
+		<div >
+			{/* <h2 >{props.category}</h2> */}
 			<ul>
-				{mealsList}
+				<li className={classes.card} key={props.id}>
+					<div className={classes.meal} id={props.id} >
+						<h3>{props.name}</h3>
+						<p>{props.description}</p>
+						<div className={classes.price}>from £{props.price.toFixed(2)}</div>
+					</div>
+					<MealsMenuItemForm onAddToCart={addToCartHandler} />
+				</li>
 			</ul>
 		</div>
 	)

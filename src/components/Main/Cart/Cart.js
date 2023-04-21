@@ -1,51 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classes from '../Cart/Cart.module.css'
 import Summary from './Summary';
-
-const DUMMY_CART = [
-	{
-		id: '1',
-		name: 'Burger Extra Large',
-		price: '£12.99'
-
-	},
-	{
-		id: '2',
-		name: 'Kebab Doner',
-		price: '£15.99'
-
-	},
-	{
-		id: '3',
-		name: 'Barbecue Burger',
-		price: '£13.99'
-	}
-];
+import CartContext from '../../../context/cart-context';
 
 
 const Cart = (props) => {
+	const cartCtx = useContext(CartContext)
 
-	const cartList = DUMMY_CART.map(item => (
+	const totalAmount = `£${cartCtx.totalAmount.toFixed(2)}`;
+	const hasItems = cartCtx.items.length > 0
+
+
+	const cartList = cartCtx.items.map(item => (
 		<div className={classes.cart_items}>
 			<span className={classes.item_name}>{item.name}</span>
-			<form className={classes.form}>
-				<div>
-					<label>x</label>
-					<input
-						type='number'
-						min='1'
-						max='12'
-						step='1'
-						defaultValue='1' />
-				</div>
-				<button>
+
+			<div className={classes.form}>
+				<button className={classes.btn}>-</button>
+				<span className={classes.amount}>x {item.amount}</span>
+				<button className={classes.btn}>+</button>
+				<span className={classes.price}>£{(item.amount * item.price).toFixed(2)}</span>
+				{/* <button>
 					<ion-icon name="trash-outline"></ion-icon>
-				</button>
-				<span>{item.price}</span>
-			</form>
+				</button> */}
+			</div>
 		</div>
 	));
-
 
 	return (
 		<div className={classes.container}>
@@ -53,17 +33,17 @@ const Cart = (props) => {
 				<div className={classes.header}>
 					<h2>
 						<span>Your order</span>
-						<span>£25.34</span>
+						<span>{totalAmount}</span>
 					</h2>
 					<p> 10£ missing to free delivery</p>
 				</div>
-				<section>
+				<section className={classes.cart_items_section}>
 					{cartList}
 				</section>
 				<div className={classes.summary} >
 					<Summary
 						name='Subtotal'
-						price='£37.50'
+						price={totalAmount}
 						className='subtotal'>
 					</Summary>
 					<Summary
@@ -88,10 +68,10 @@ const Cart = (props) => {
 					</Summary>
 					<Summary
 						name='Total'
-						price='£37.50'
+						price={totalAmount}
 						className='total'>
 					</Summary>
-					<button onClick={props.onShowCheckout}>Go to checkout</button>
+					{hasItems && <button onClick={props.onShowCheckout}>Go to checkout</button>}
 				</div>
 
 			</div>

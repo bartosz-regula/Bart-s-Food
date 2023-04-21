@@ -6,6 +6,8 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: 1.6rem; */
+	/* position: sticky; */
+	/* overflow: auto; */
 }
 
 .content {
@@ -17,6 +19,8 @@
 	font-size: 1.6rem;
 	height: auto;
 	position: sticky;
+	/* overflow: scroll; */
+
 	top: 2rem;
 }
 
@@ -37,6 +41,13 @@
 	color: orange;
 }
 
+.cart_items_section {
+	/* background-color: blue; */
+	max-height: 40rem;
+	overflow: scroll;
+	/* padding-right: 3rem; */
+}
+
 .cart_items {
 	display: flex;
 	justify-content: space-between;
@@ -45,6 +56,23 @@
 	border-bottom: 0.1px solid #d4d2d2;
 }
 
+.amount {
+	font-weight: bold;
+	border: 1px solid #ccc;
+	font-size: 1.4rem;
+	padding: 0.25rem 0.75rem;
+	border-radius: 6px;
+	color: #363636;
+}
+
+.btn {
+	border: 1px solid red;
+	background-color: red;
+}
+
+.price {
+	margin-left: 1rem;
+}
 .form {
 	display: flex;
 	gap: 1rem;
