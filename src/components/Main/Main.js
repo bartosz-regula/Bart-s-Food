@@ -10,7 +10,7 @@ const Main = (props) => {
 
 	return (
 		<div className={classes['main-container']}>
-			<MealsCategory />
+			{/* <MealsCategory /> */}
 			<MealsMenu />
 			<Cart onShowCheckout={props.onShowCheckout} />
 		</div>

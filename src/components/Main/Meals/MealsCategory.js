@@ -1,94 +1,26 @@
-import { useState, useEffect, useRef } from 'react'
-import React from 'react'
-import classes from './MealsCategory.module.css'
+import { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import classes from './MealsCategory.module.css';
 
-const MEALS = [
-	{
-		id: '#Burgers',
-		name: 'Burgers',
-
-	},
-	{
-		id: '#Pizzas',
-		name: 'Pizzas',
-
-	},
-	{
-		id: '#Kebabs',
-		name: 'Kebabs',
-
-	},
-	{
-		id: '#Wraps',
-		name: 'Wraps',
-
-	},
-	{
-		id: '#Pittas',
-		name: 'Pittas',
-
-	},
-	{
-		id: '#Sandwiches',
-		name: 'Sandwiches',
-
-	},
-	{
-		id: '#Beef Dogs',
-		name: 'Beef Dogs',
-
-	},
-	{
-		id: '#Salads',
-		name: 'Salads',
-
-	},
-	{
-		id: '#Kids Meal',
-		name: 'Kids Meal',
-
-	},
-	{
-		id: '#Piri Piri',
-		name: 'Piri Piri',
-
-	},
-	{
-		id: '#Dips',
-		name: 'Dips',
-
-	},
-	{
-		id: '#Soft Drinks',
-		name: 'Soft Drinks',
-
-	},
-	{
-		id: '#Beers',
-		name: 'Beers',
-
-	},
-	{
-		id: '#Desserts',
-		name: 'Desserts',
-
-	},
-];
-
-const MealsCategory = () => {
-	const [activeCategory, setActiveCategory] = useState('');
-
-	const categoryList = MEALS.map((category) => (
-		<li className={category.id === activeCategory ? classes.active : ''} key={category.id}>
-			<a href="#" onClick={() => setActiveCategory(category.id)}>
-				{category.name}
-			</a>
-		</li>
-	));
-
+const MealsCategory = ({ scrollToRef }) => {
 	return (
 		<div className={classes.meals_category}>
-			<ul>{categoryList}</ul>
+			<ul>
+				<li onClick={() => scrollToRef('burgers')}>Burgers</li>
+				<li onClick={() => scrollToRef('pizzas')}>Pizzas</li>
+				<li onClick={() => scrollToRef('kebabs')}>Kebabs</li>
+				<li onClick={() => scrollToRef('wraps')}>Wraps</li>
+				<li onClick={() => scrollToRef('pittas')}>Pittas</li>
+				<li onClick={() => scrollToRef('sandwiches')}>Sandwiches</li>
+				<li onClick={() => scrollToRef('beef-dogs')}>Beef Dogs</li>
+				<li onClick={() => scrollToRef('salads')}>Salads</li>
+				<li onClick={() => scrollToRef('soft-drinks')}>Soft Drinks</li>
+				<li onClick={() => scrollToRef('beers')}>Beers</li>
+				<li onClick={() => scrollToRef('desserts')}>Desserts</li>
+				<li onClick={() => scrollToRef('kids-meal')}>Kids Meal</li>
+				<li onClick={() => scrollToRef('piri-piri')}>Piri Piri</li>
+				<li onClick={() => scrollToRef('dips')}>Dips</li>
+			</ul>
 		</div>
 	);
 };
