@@ -15,56 +15,71 @@ const MealsMenu = () => {
 	const sandwichesRef = useRef(null);
 	const beefDogsRef = useRef(null);
 	const saladsRef = useRef(null);
-	const beersRef = useRef(null);
 	const softDrinksRef = useRef(null);
-	const dessertsRef = useRef(null);
+	const beersRef = useRef(null);
 	const kidsMealRef = useRef(null);
 	const piriPiriRef = useRef(null);
 	const dipsRef = useRef(null);
+	const dessertsRef = useRef(null);
+
 
 	const scrollToRef = (id) => {
 		switch (id) {
 			case "burgers":
-				burgersRef.current.scrollIntoView({ behavior: "smooth" });
+				const burgersScrollPosition = burgersRef.current.offsetTop - 20;
+				window.scrollTo({ top: burgersScrollPosition, behavior: "smooth" });
 				break;
 			case "pizzas":
-				pizzaRef.current.scrollIntoView({ behavior: "smooth" });
+				const pizzasScrollPosition = pizzaRef.current.offsetTop - 20;
+				window.scrollTo({ top: pizzasScrollPosition, behavior: "smooth" });
 				break;
 			case "kebabs":
-				kebabRef.current.scrollIntoView({ behavior: "smooth" });
+				const kebabsScrollPosition = kebabRef.current.offsetTop - 20;
+				window.scrollTo({ top: kebabsScrollPosition, behavior: "smooth" });
 				break;
 			case "wraps":
-				wrapsRef.current.scrollIntoView({ behavior: "smooth" });
+				const wrapsScrollPosition = wrapsRef.current.offsetTop - 20;
+				window.scrollTo({ top: wrapsScrollPosition, behavior: "smooth" });
 				break;
 			case "pittas":
-				pittasRef.current.scrollIntoView({ behavior: "smooth" });
+				const pittasScrollPosition = pittasRef.current.offsetTop - 20;
+				window.scrollTo({ top: pittasScrollPosition, behavior: "smooth" });
 				break;
 			case "sandwiches":
-				sandwichesRef.current.scrollIntoView({ behavior: "smooth" });
+				const sandwichesScrollPosition = sandwichesRef.current.offsetTop - 20;
+				window.scrollTo({ top: sandwichesScrollPosition, behavior: "smooth" });
 				break;
 			case "beef-dogs":
-				beefDogsRef.current.scrollIntoView({ behavior: "smooth" });
+				const beefDogsScrollPosition = beefDogsRef.current.offsetTop - 20;
+				window.scrollTo({ top: beefDogsScrollPosition, behavior: "smooth" });
 				break;
 			case "salads":
-				saladsRef.current.scrollIntoView({ behavior: "smooth" });
+				const saladsScrollPosition = saladsRef.current.offsetTop - 20;
+				window.scrollTo({ top: saladsScrollPosition, behavior: "smooth" });
 				break;
 			case "soft-drinks":
-				softDrinksRef.current.scrollIntoView({ behavior: "smooth" });
+				const softDrinksScrollPosition = softDrinksRef.current.offsetTop - 20;
+				window.scrollTo({ top: softDrinksScrollPosition, behavior: "smooth" });
 				break;
 			case "beers":
-				beersRef.current.scrollIntoView({ behavior: "smooth" });
-				break;
-			case "desserts":
-				dessertsRef.current.scrollIntoView({ behavior: "smooth" });
+				const beersScrollPosition = beersRef.current.offsetTop - 20;
+				window.scrollTo({ top: beersScrollPosition, behavior: "smooth" });
 				break;
 			case "kids-meal":
-				kidsMealRef.current.scrollIntoView({ behavior: "smooth" });
+				const kidsMealScrollPosition = kidsMealRef.current.offsetTop - 20;
+				window.scrollTo({ top: kidsMealScrollPosition, behavior: "smooth" });
 				break;
 			case "piri-piri":
-				piriPiriRef.current.scrollIntoView({ behavior: "smooth" });
+				const piriPiriScrollPosition = piriPiriRef.current.offsetTop - 20;
+				window.scrollTo({ top: piriPiriScrollPosition, behavior: "smooth" });
 				break;
 			case "dips":
-				dipsRef.current.scrollIntoView({ behavior: "smooth" });
+				const dipsScrollPosition = dipsRef.current.offsetTop - 20;
+				window.scrollTo({ top: dipsScrollPosition, behavior: "smooth" });
+				break;
+			case "desserts":
+				const dessertsScrollPosition = dessertsRef.current.offsetTop - 20;
+				window.scrollTo({ top: dessertsScrollPosition, behavior: "smooth" });
 				break;
 			default:
 				break;
@@ -73,7 +88,7 @@ const MealsMenu = () => {
 
 	return (
 		<div className={classes.container}>
-			<span >
+			<span className={classes.span}>
 				<MealsCategory scrollToRef={scrollToRef} />
 			</span>
 			<span>
@@ -107,9 +122,6 @@ const MealsMenu = () => {
 				<div id="beers" ref={beersRef}>
 					<MealsMenuCategory category="Beers" />
 				</div>
-				<div id="desserts" ref={dessertsRef}>
-					<MealsMenuCategory category="Desserts" />
-				</div>
 				<div id="kids-meal" ref={kidsMealRef}>
 					<MealsMenuCategory category="Kids Meal" />
 				</div>
@@ -118,6 +130,9 @@ const MealsMenu = () => {
 				</div>
 				<div id="dips" ref={dipsRef}>
 					<MealsMenuCategory category="Dips" />
+				</div>
+				<div id="desserts" ref={dessertsRef}>
+					<MealsMenuCategory category="Desserts" />
 				</div>
 			</span>
 		</div>
