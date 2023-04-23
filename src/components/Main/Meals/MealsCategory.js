@@ -6,45 +6,45 @@ const MealsCategory = ({ scrollToRef }) => {
 		<div className={classes.meals_category}>
 			<ul>
 				<li onClick={() => scrollToRef('burgers')}>
-					<a>Burgers</a></li>
+					Burgers</li>
 				<li onClick={() => scrollToRef('pizzas')}>
-					<a>Pizzas</a>
+					Pizzas
 				</li>
 				<li onClick={() => scrollToRef('kebabs')}>
-					<a>Kebabs</a>
+					Kebabs
 				</li>
 				<li onClick={() => scrollToRef('wraps')}>
-					<a>Wraps</a>
+					Wraps
 				</li>
 				<li onClick={() => scrollToRef('pittas')}>
-					<a>Pittas</a>
+					Pittas
 				</li>
 				<li onClick={() => scrollToRef('sandwiches')}>
-					<a>Sandwiches</a>
+					Sandwiches
 				</li>
 				<li onClick={() => scrollToRef('beef-dogs')}>
-					<a>Beef Dogs</a>
+					Beef Dogs
 				</li>
 				<li onClick={() => scrollToRef('salads')}>
-					<a>Salads</a>
+					Salads
 				</li>
 				<li onClick={() => scrollToRef('soft-drinks')}>
-					<a>Soft Drinks</a>
+					Soft Drinks
 				</li>
 				<li onClick={() => scrollToRef('beers')}>
-					<a>Beers</a>
+					Beers
 				</li>
 				<li onClick={() => scrollToRef('kids-meal')}>
-					<a>Kids Meal</a>
+					Kids Meal
 				</li>
 				<li onClick={() => scrollToRef('piri-piri')}>
-					<a>Piri Piri</a>
+					Piri Piri
 				</li>
 				<li onClick={() => scrollToRef('dips')}>
-					<a>Dips</a>
+					Dips
 				</li>
 				<li onClick={() => scrollToRef('desserts')}>
-					<a>Desserts</a>
+					Desserts
 				</li>
 			</ul>
 		</div>

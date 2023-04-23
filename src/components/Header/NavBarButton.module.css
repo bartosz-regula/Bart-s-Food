@@ -2,7 +2,7 @@
 .nav_item:visited {
 	color: white;
 	text-decoration: none;
-	transition: all 0.1s;
+	transition: all 0.2s;
 }
 
 .nav_item:hover,

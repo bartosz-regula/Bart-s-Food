@@ -71,7 +71,9 @@ const Cart = (props) => {
 						price={totalAmount}
 						className='total'>
 					</Summary>
-					{hasItems && <button onClick={props.onShowCheckout}>Go to checkout</button>}
+					<div className={classes.summary_btn_container}>
+						{hasItems && <button onClick={props.onShowCheckout}>Go to checkout</button>}
+					</div>
 				</div>
 
 			</div>

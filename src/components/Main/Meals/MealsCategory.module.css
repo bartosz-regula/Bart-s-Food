@@ -3,17 +3,14 @@
 	margin-top: 5rem;
 	position: sticky;
 	top: 2rem;
-	/* background-color: yellow; */
 }
 
 .meals_category li {
 	list-style: none;
-}
-
-.meals_category a {
 	padding: 1.1rem 4.5rem 1.1rem 1.5rem;
 	border-left: 0.2rem solid #dbd9d7;
 	display: block;
+	cursor: pointer;
 }
 
 .meals_category a:link,
@@ -23,13 +20,13 @@
 	white-space: nowrap;
 }
 
-.meals_category a:hover,
-.meals_category a:active {
+.meals_category li:hover,
+.meals_category li:active {
 	color: orange;
 	border-left: 2px solid orange;
 }
 
-.meals_category .active a {
+.meals_category .active li {
 	color: orange;
 	border-left: 2px solid orange;
 }

@@ -23,7 +23,7 @@ const MealsMenuItem = (props) => {
 
 		<div >
 			{/* <h2 >{props.category}</h2> */}
-			<ul>
+			<ul className={classes.item_container}>
 				<li className={classes.card} key={props.id}>
 					<div className={classes.meal} id={props.id} >
 						<h3>{props.name}</h3>

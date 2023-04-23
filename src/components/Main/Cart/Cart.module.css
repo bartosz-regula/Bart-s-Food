@@ -24,10 +24,6 @@
 	top: 2rem;
 }
 
-.header {
-	/* border-bottom: 0.1px solid #727272; */
-}
-
 .header h2 {
 	display: flex;
 	justify-content: space-between;
@@ -66,8 +62,8 @@
 }
 
 .btn {
-	border: 1px solid red;
-	background-color: red;
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 .price {
@@ -93,19 +89,21 @@
 
 .form button {
 	scale: 1.4;
-	color: #dc0000;
+	color: var(--primary-color);
 	background-color: transparent;
 	border: none;
 }
 
-.summary button {
-	margin-top: 3rem;
+.summary_btn_container button {
+	margin-top: 4rem;
 	border-radius: 20px;
 	cursor: pointer;
-	background-color: #dc0000;
-	border: 1px solid #ad0000;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color-darker);
 	color: white;
-	padding: 1.2rem 10.5rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+	padding: 1.3rem;
+	width: 100%;
+	display: block;
 }
