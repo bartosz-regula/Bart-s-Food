@@ -1,14 +1,4 @@
-.container h2 {
-	padding-top: 4rem;
-	margin-top: -2rem;
-	text-align: center;
-	font-size: 2.6rem;
-}
-
-.item_container:last-child {
-	border-bottom: none;
-}
-.card {
+.item_container {
 	margin: 4rem;
 	color: var(--meal-name-color);
 	border-bottom: 0.1px solid var(--border-bottom-color);
@@ -17,16 +7,16 @@
 	align-items: center;
 }
 
-.meal {
+.item {
 	padding-top: 2rem;
 	margin-right: 3rem;
 }
 
-.meal h3 {
+.item h3 {
 	font-size: 2rem;
 }
 
-.meal p {
+.item p {
 	font-size: 1.6rem;
 	color: var(--meal-description-color);
 	padding: 1rem 0;

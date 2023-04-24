@@ -1,11 +1,11 @@
 import React from 'react'
-import classes from './NavBarButton.module.css'
+import classes from './NavBarBtn.module.css'
 
-const NavBarButton = (props) => {
+const NavBarBtn = (props) => {
 	return (
 		<li>
 			<a
-				className={classes.nav_item}
+				className={classes.nav_btn}
 				href={props.href}
 				target="_blank"
 				rel="noreferrer">
@@ -16,4 +16,4 @@ const NavBarButton = (props) => {
 	)
 }
 
-export default NavBarButton;
+export default NavBarBtn;

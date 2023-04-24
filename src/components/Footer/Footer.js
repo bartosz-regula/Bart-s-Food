@@ -10,10 +10,10 @@ import OurApps from './OurApps';
 const Footer = () => {
 	return (
 		<footer>
-			<div className={classes.container}>
+			<div className={classes.container_main}>
 				<div>
 					<p>Download our apps</p>
-					<div className={classes.store_images}>
+					<div className={classes.store_img_container}>
 						<OurApps
 							href='https://www.apple.com/pl/app-store'
 							src={app_store}
@@ -27,8 +27,6 @@ const Footer = () => {
 							src={app_gallery}
 							alt='App Gallery logo' />
 					</div>
-
-
 				</div>
 
 				<div className={classes.contact_container}>
@@ -41,11 +39,11 @@ const Footer = () => {
 				</div>
 
 				<div>
-					<img className={classes.payment_images} src={paymentOperators} alt='Payment operators'></img>
+					<img className={classes.payment_img} src={paymentOperators} alt='Payment operators'></img>
 				</div>
 			</div>
-
 			<div className={classes.copyright}>Copyright © 2023 by Bart's Food, Inc. All rights reserved.</div>
+
 
 		</footer>
 

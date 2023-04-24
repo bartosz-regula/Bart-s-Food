@@ -3,7 +3,7 @@
 	align-items: center;
 }
 
-.form button {
+.add_btn {
 	border-radius: 20px;
 	cursor: pointer;
 	background-color: var(--primary-color);

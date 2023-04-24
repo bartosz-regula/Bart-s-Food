@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './Summary.module.css'
+import classes from './CartSummary.module.css'
 
-const Summary = (props) => {
+const CartSummary = (props) => {
 	return (
 		<div className={classes[props.className]}>
 			<span>{props.name}</span>
@@ -10,4 +10,4 @@ const Summary = (props) => {
 	)
 }
 
-export default Summary
+export default CartSummary

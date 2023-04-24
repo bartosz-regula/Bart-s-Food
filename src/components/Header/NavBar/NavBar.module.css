@@ -1,4 +1,4 @@
-.navigation_content {
+.nav_container {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -7,5 +7,4 @@
 	font-size: 4rem;
 	padding-top: 4rem;
 	padding-right: 4rem;
-	margin: auto;
 }

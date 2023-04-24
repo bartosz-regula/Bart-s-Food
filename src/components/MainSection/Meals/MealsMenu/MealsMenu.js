@@ -1,7 +1,7 @@
 import React from 'react'
 import MealsMenuCategory from './MealsMenuCategory'
 import { useRef } from 'react';
-import MealsCategory from './MealsCategory';
+import MealsCategory from '../MealsCategory/MealsCategory';
 import classes from './MealsMenu.module.css'
 
 
@@ -87,8 +87,8 @@ const MealsMenu = () => {
 	};
 
 	return (
-		<div className={classes.container}>
-			<span className={classes.span}>
+		<div className={classes.meals_container}>
+			<span >
 				<MealsCategory scrollToRef={scrollToRef} />
 			</span>
 			<span>

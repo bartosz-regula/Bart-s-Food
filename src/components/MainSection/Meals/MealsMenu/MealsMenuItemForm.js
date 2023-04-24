@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import Input from '../../UI/Input'
+import Input from '../../../UI/Input'
 import classes from './MealsMenuItemForm.module.css'
 
 
@@ -34,7 +34,7 @@ const MealsMenuItemForm = (props) => {
 					step: '1',
 					defaultValue: '1'
 				}} />
-			<button>Add</button>
+			<button className={classes.add_btn}>Add</button>
 			{!amountIsValid && <p>Pelase enter a valid amount (1-12)</p>}
 		</form>)
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './MealsCategory.module.css';
+import classes from '../../Meals/MealsCategory/MealsCategory.module.css';
 
 const MealsCategory = ({ scrollToRef }) => {
 	return (

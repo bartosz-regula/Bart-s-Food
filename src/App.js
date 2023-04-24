@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
 import Header from './components/Header/Header'
-import Main from './components/Main/Main'
+import MainContainer from './components/MainSection/MainContainer'
 import Footer from './components/Footer/Footer'
-import Checkout from './components/Main/Cart/Checkout'
+import Checkout
+	from './components/Checkout/Checkout'
 import CartProvider from './context/CartProvider'
-import CartButton from './components/Main/Cart/CartButton'
+import CartButton from './components/MainSection/Cart/CartButton'
 
 const App = () => {
 
@@ -23,11 +24,12 @@ const App = () => {
 
 	return (
 		<CartProvider>
-			{checkoutIsShown && <Checkout onClose={hideCheckoutHandler} />}
+			{checkoutIsShown && <Checkout
+				onClose={hideCheckoutHandler} />}
 			<Header />
 			<CartButton />
 			<main>
-				<Main onShowCheckout={showCheckoutHandler} />
+				<MainContainer onShowCheckout={showCheckoutHandler} />
 			</main>
 			<Footer></Footer>
 		</CartProvider>

@@ -9,7 +9,7 @@ const CartButton = (props) => {
 	}, 0);
 
 	return (
-		<button className={classes.button} onClick={props.onClick}>
+		<button className={classes.cart_btn} onClick={props.onClick}>
 			<span className={classes.icon}>
 			</span>
 			<span>Your Cart</span>

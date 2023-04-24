@@ -1,4 +1,4 @@
-.button {
+.cart_btn {
 	cursor: pointer;
 	font: inherit;
 	font-size: 2rem;
@@ -13,9 +13,9 @@
 	font-weight: bold;
 }
 
-.button:hover,
-.button:active {
-	background-color: var(--primary-color-darker);
+.cart_btn:hover,
+.cart_btn:active {
+	background-color: #2c0d00;
 }
 
 .icon {
@@ -32,8 +32,8 @@
 	font-weight: bold;
 }
 
-.button:hover .badge,
-.button:active .badge {
+.cart_btn:hover .badge,
+.cart_btn:active .badge {
 	background-color: var(--primary-color-darker);
 }
 
