@@ -18,6 +18,10 @@ footer {
 }
 
 .contact_details {
+	/* display: flex; */
+}
+.contact_details_icon {
+	color: var(--primary-color);
 }
 
 .contact_container p {

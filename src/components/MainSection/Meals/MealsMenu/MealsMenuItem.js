@@ -19,20 +19,17 @@ const MealsMenuItem = (props) => {
 	}
 
 	return (
+		<li className={classes.item_container} key={props.id}>
+			<div className={classes.item} id={props.id} >
+				<h3>{props.name}</h3>
+				<p>{props.description}</p>
+				<div className={classes.price}>from £{props.price.toFixed(2)}</div>
+			</div>
+			<MealsMenuItemForm onAddToCart={addToCartHandler} />
+		</li>
 
-		<div >
-			<ul>
-				<li className={classes.item_container} key={props.id}>
-					<div className={classes.item} id={props.id} >
-						<h3>{props.name}</h3>
-						<p>{props.description}</p>
-						<div className={classes.price}>from £{props.price.toFixed(2)}</div>
-					</div>
-					<MealsMenuItemForm onAddToCart={addToCartHandler} />
-				</li>
-			</ul>
-		</div>
 	)
 }
 
-export default MealsMenuItem
+export default MealsMenuItem;
+

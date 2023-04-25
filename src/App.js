@@ -27,7 +27,7 @@ const App = () => {
 			{checkoutIsShown && <Checkout
 				onClose={hideCheckoutHandler} />}
 			<Header />
-			<CartButton />
+			{/* <CartButton /> */}
 			<main>
 				<MainContainer onShowCheckout={showCheckoutHandler} />
 			</main>

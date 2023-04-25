@@ -2,6 +2,7 @@ import React from 'react';
 import classes from '../../Meals/MealsCategory/MealsCategory.module.css';
 
 const MealsCategory = ({ scrollToRef }) => {
+
 	return (
 		<div className={classes.meals_category}>
 			<ul>
@@ -52,3 +53,6 @@ const MealsCategory = ({ scrollToRef }) => {
 };
 
 export default MealsCategory;
+
+
+

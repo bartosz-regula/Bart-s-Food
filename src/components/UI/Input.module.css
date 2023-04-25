@@ -1,13 +1,13 @@
-.input {
+.input_container {
 	display: flex;
 }
 
-.input label {
+.input_container label {
 	font-size: 1.5rem;
 	margin-right: 1rem;
 }
 
-.input input {
+.input_container input {
 	margin-right: 1.5rem;
-	width: 3.2rem;
+	width: 3rem;
 }

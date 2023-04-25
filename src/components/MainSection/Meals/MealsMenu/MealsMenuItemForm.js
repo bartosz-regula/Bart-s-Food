@@ -13,7 +13,8 @@ const MealsMenuItemForm = (props) => {
 		const enteredAmount = amountInputRef.current.value;
 		const enteredAmountNumber = +enteredAmount
 
-		if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 || enteredAmountNumber > 12) {
+		if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 ||
+			enteredAmountNumber > 5) {
 			setAmountIsValid(false);
 			return;
 		}
@@ -30,12 +31,12 @@ const MealsMenuItemForm = (props) => {
 					id: 'amount_',
 					type: 'number',
 					min: '1',
-					max: '12',
+					max: '5',
 					step: '1',
 					defaultValue: '1'
 				}} />
+			{!amountIsValid && <p>Pelase enter a valid amount (1-5)</p>}
 			<button className={classes.add_btn}>Add</button>
-			{!amountIsValid && <p>Pelase enter a valid amount (1-12)</p>}
 		</form>)
 }
 

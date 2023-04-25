@@ -8,7 +8,7 @@ import MealsMenu from './Meals/MealsMenu/MealsMenu';
 const MainContainer = (props) => {
 
 	return (
-		<div className={classes.main_container}>
+		<div id="main" className={classes.main_container}>
 			<MealsMenu />
 			<Cart onShowCheckout={props.onShowCheckout} />
 		</div>

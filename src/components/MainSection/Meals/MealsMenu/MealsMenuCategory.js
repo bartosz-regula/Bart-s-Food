@@ -36,7 +36,9 @@ const MealsMenuCategory = (props) => {
 
 		<div className={classes.container}>
 			<h2>{props.category}</h2>
-			{menuList}
+			<ul>
+				{menuList}
+			</ul>
 
 		</div>
 

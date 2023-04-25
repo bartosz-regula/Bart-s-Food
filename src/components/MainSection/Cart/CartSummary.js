@@ -5,7 +5,7 @@ const CartSummary = (props) => {
 	return (
 		<div className={classes[props.className]}>
 			<span>{props.name}</span>
-			<span>{props.price}</span>
+			<span>£{(props.price).toFixed(2)}</span>
 		</div>
 	)
 }
