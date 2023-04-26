@@ -4,7 +4,7 @@ import classes from './MealsMenuItemForm.module.css'
 
 
 const MealsMenuItemForm = (props) => {
-	const [amountIsValid, setAmountIsValid] = useState(true)
+	// const [amountIsValid, setAmountIsValid] = useState(true)
 	const amountInputRef = useRef();
 
 	const submitHandler = event => {
@@ -13,11 +13,11 @@ const MealsMenuItemForm = (props) => {
 		const enteredAmount = amountInputRef.current.value;
 		const enteredAmountNumber = +enteredAmount
 
-		if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 ||
-			enteredAmountNumber > 5) {
-			setAmountIsValid(false);
-			return;
-		}
+		// if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 ||
+		// 	enteredAmountNumber > 5) {
+		// 	setAmountIsValid(false);
+		// 	return;
+		// }
 
 		props.onAddToCart(enteredAmountNumber)
 	};
@@ -35,7 +35,6 @@ const MealsMenuItemForm = (props) => {
 					step: '1',
 					defaultValue: '1'
 				}} />
-			{!amountIsValid && <p>Pelase enter a valid amount (1-5)</p>}
 			<button className={classes.add_btn}>Add</button>
 		</form>)
 }

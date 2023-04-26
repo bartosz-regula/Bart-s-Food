@@ -32,4 +32,3 @@ const MealsMenuItem = (props) => {
 }
 
 export default MealsMenuItem;
-

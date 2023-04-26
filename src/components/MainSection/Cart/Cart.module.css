@@ -8,6 +8,12 @@
 	height: auto;
 	position: sticky;
 	top: 2rem;
+	max-width: 100rem;
+	/* width: 100rem; */
+}
+
+.cart_container img {
+	max-width: 100%;
 }
 
 .cart_header h2 {

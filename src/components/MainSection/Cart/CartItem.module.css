@@ -30,6 +30,7 @@
 	border: none;
 	background-color: transparent;
 	font-size: 1.8rem;
+	cursor: pointer;
 }
 
 .cart_item_amount {

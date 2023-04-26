@@ -9,7 +9,8 @@ const CartItem = (props) => {
 
 			<div className={classes.cart_item_summary}>
 				<button
-					className={classes.btn}>
+					className={classes.btn}
+					onClick={props.onRemove}>
 					<ion-icon
 						name="remove-circle-outline">
 					</ion-icon>
@@ -19,14 +20,12 @@ const CartItem = (props) => {
 					x {props.amount}
 				</span>
 				<button
-					className={classes.btn}>
+					className={classes.btn}
+					onClick={props.onAdd}>
 					<ion-icon
 						name="add-circle-outline">
 					</ion-icon>
 				</button>
-				{/* <button>
-					<ion-icon name="trash-outline"></ion-icon>
-				</button> */}
 			</div>
 			<span className={classes.cart_item_price}>£{props.price.toFixed(2)}</span>
 		</div>

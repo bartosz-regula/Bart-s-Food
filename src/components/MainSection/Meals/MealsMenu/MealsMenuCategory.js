@@ -5,8 +5,6 @@ import classes from './MealsMenuCategory.module.css'
 
 
 
-
-
 const MealsMenuCategory = (props) => {
 	const [food, setFood] = useState([])
 

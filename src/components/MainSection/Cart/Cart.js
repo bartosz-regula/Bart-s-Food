@@ -3,6 +3,7 @@ import classes from '../Cart/Cart.module.css'
 import CartSummary from './CartSummary';
 import CartItem from './CartItem';
 import CartContext from '../../../context/cart-context';
+import empty_basket from '../../../assets/images/empty_cart.png'
 
 
 
@@ -24,20 +25,20 @@ const Cart = (props) => {
 	if (subtotalAmount >= 30) {
 		delivery = 0
 	} else {
-		delivery = 12
+		delivery = 8.50
 	}
 
 	const totalAmount = (subtotalAmount + discount + bagFee + serviceCharge + delivery)
-	console.log(subtotalAmount);
-	console.log(discount);
-	console.log(totalAmount);
-	console.log(bagFee);
-	console.log(serviceCharge);
-	console.log(delivery);
-	console.log(amountMissingForFreeDelivery);
 
-	const cartItemRemoveHandler = id => { };
-	const cartItemAddHandler = item => { };
+	console.log("Subtotal", subtotalAmount)
+	console.log("Total", totalAmount);;
+
+	const cartItemRemoveHandler = id => {
+		cartCtx.removeItem(id);
+	};
+	const cartItemAddHandler = item => {
+		cartCtx.addItem({ ...item, amount: 1, price: (item.price / item.amount) });
+	};
 
 	const cartList = cartCtx.items.map(item => (
 		<CartItem
@@ -57,9 +58,7 @@ const Cart = (props) => {
 
 				{!hasItems &&
 					<div>
-						<h2>We are looking forward to your order!</h2>
-						<p>Free delivery for orders over £30! :)!</p>
-						<p>20% discount for order over £60!:)!</p>
+						<img src={empty_basket} alt='Empty basket' />
 					</div>}
 				{hasItems &&
 					<div>
@@ -74,12 +73,12 @@ const Cart = (props) => {
 							{subtotalAmount >= 30 &&
 								<p className={classes.free_delivery}> You qualify for free delivery!
 								</p>}
-							{/* {subtotalAmount <= 60 &&
+							{(subtotalAmount >= 30 && subtotalAmount < 60) &&
 								<p className={classes.paid_delivery}> Spend {amountMissingForDiscount} more and get 20% discount!
 								</p>}
 							{subtotalAmount >= 60 &&
 								<p className={classes.free_delivery}> You have 20% discount!!
-								</p>} */}
+								</p>}
 						</div>
 						<section className={classes.cart_items_list}>
 							{cartList}
@@ -116,14 +115,10 @@ const Cart = (props) => {
 								price={totalAmount}
 								className='total'>
 							</CartSummary>
-							{/* {subtotalAmount <= 60 &&
-								<p className={classes.paid_delivery}> Spend {amountMissingForDiscount} more and get 20% discount!
-								</p>}
-							{subtotalAmount >= 60 &&
-								<p className={classes.free_delivery}> You have 20% discount!!
-								</p>} */}
 							<div >
-								{hasItems && <button className={classes.checkout_btn} onClick={props.onShowCheckout}>Go to checkout</button>}
+								<button
+									className={classes.checkout_btn} onClick={props.onShowCheckout}>Go to checkout
+								</button>
 							</div>
 						</div>
 					</div>}
