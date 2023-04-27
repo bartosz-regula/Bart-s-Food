@@ -9,17 +9,18 @@ import empty_basket from '../../../assets/images/empty_cart.png'
 
 const Cart = (props) => {
 	const cartCtx = useContext(CartContext)
-	const subtotalAmount = cartCtx.totalAmount;
+
+	let delivery;
 	let discount = 0;
 	const bagFee = 1.50
 	const serviceCharge = 2
-	let delivery;
+	const subtotalAmount = cartCtx.totalAmount;
 	const hasItems = cartCtx.items.length > 0
 	const amountMissingForFreeDelivery = `£${(30 - subtotalAmount).toFixed(2)}`;
 	const amountMissingForDiscount = `£${(60 - subtotalAmount).toFixed(2)}`;
 
+	discount = -(subtotalAmount * 0.2);
 	if (subtotalAmount >= 60) {
-		discount = -(subtotalAmount * 0.2);
 	}
 	console.log(discount);
 	if (subtotalAmount >= 30) {
@@ -30,8 +31,7 @@ const Cart = (props) => {
 
 	const totalAmount = (subtotalAmount + discount + bagFee + serviceCharge + delivery)
 
-	console.log("Subtotal", subtotalAmount)
-	console.log("Total", totalAmount);;
+
 
 	const cartItemRemoveHandler = id => {
 		cartCtx.removeItem(id);
@@ -39,6 +39,32 @@ const Cart = (props) => {
 	const cartItemAddHandler = item => {
 		cartCtx.addItem({ ...item, amount: 1, price: (item.price / item.amount) });
 	};
+
+
+	const header = (
+		<div className={classes.cart_header} >
+			<h2>
+				<span>Your order</span>
+				<span>£{(subtotalAmount).toFixed(2)}</span>
+			</h2>
+			{subtotalAmount <= 30 &&
+				<p className={classes.paid_delivery}> {amountMissingForFreeDelivery} missing to free delivery
+				</p>
+			}
+			{subtotalAmount >= 30 &&
+				<p className={classes.free_delivery}> You qualify for free delivery!
+				</p>
+			}
+			{(subtotalAmount >= 30 && subtotalAmount < 60) &&
+				<p className={classes.paid_delivery}> Spend {amountMissingForDiscount} more and get 20% discount!
+				</p>
+			}
+			{subtotalAmount >= 60 &&
+				<p className={classes.free_delivery}> You have 20% discount!!
+				</p>
+			}
+		</div >
+	)
 
 	const cartList = cartCtx.items.map(item => (
 		<CartItem
@@ -62,24 +88,7 @@ const Cart = (props) => {
 					</div>}
 				{hasItems &&
 					<div>
-						<div className={classes.cart_header}>
-							<h2>
-								<span>Your order</span>
-								<span>£{(subtotalAmount).toFixed(2)}</span>
-							</h2>
-							{subtotalAmount <= 30 &&
-								<p className={classes.paid_delivery}> {amountMissingForFreeDelivery} missing to free delivery
-								</p>}
-							{subtotalAmount >= 30 &&
-								<p className={classes.free_delivery}> You qualify for free delivery!
-								</p>}
-							{(subtotalAmount >= 30 && subtotalAmount < 60) &&
-								<p className={classes.paid_delivery}> Spend {amountMissingForDiscount} more and get 20% discount!
-								</p>}
-							{subtotalAmount >= 60 &&
-								<p className={classes.free_delivery}> You have 20% discount!!
-								</p>}
-						</div>
+						{header}
 						<section className={classes.cart_items_list}>
 							{cartList}
 						</section>

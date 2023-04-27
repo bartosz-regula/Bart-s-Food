@@ -1,29 +1,30 @@
 .close_btn {
 	position: absolute;
 	top: 1.5rem;
-	left: 39rem;
+	left: 35.5rem;
 	font-size: 2.5rem;
 	border: none;
 	justify-content: center;
 	background-color: transparent;
 	cursor: pointer;
+	color: grey;
 }
 
-.from {
+.form {
 	width: auto;
 	font-size: 1.6rem;
 }
 
-.from h2 {
+.form h2 {
 	margin-bottom: 2rem;
 	text-align: center;
 }
 
-.from label {
+.form label {
 	margin-bottom: -1rem;
 }
 
-.from input {
+.form input {
 	display: block;
 	width: 100%;
 	padding: 1rem;

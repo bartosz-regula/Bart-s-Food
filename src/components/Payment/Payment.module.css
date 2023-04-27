@@ -1,0 +1,86 @@
+.container {
+	/* background-color: red; */
+	width: 31rem;
+	margin: auto;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+.back_btn {
+	position: absolute;
+	top: 3rem;
+	left: 2rem;
+	font-size: 2.5rem;
+	border: none;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	color: grey;
+}
+
+.close_btn {
+	position: absolute;
+	top: 2rem;
+	left: 34.5rem;
+	font-size: 2.5rem;
+	border: none;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	color: grey;
+}
+
+.card_img_container {
+	width: 100%;
+	margin-top: -13rem;
+}
+
+.card_img_container img {
+	width: 80%;
+}
+
+.operators_img_container {
+	width: 90%;
+
+	display: inline;
+}
+
+.operators_img_container img {
+	margin-top: -3rem;
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+	border-radius: 1.2rem;
+	border: 1px solid rgb(184, 184, 184);
+}
+
+.card_exp_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_exp_container input {
+	width: 8rem;
+	text-align: center;
+}
+
+.payment_btn {
+	margin-top: 1rem;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color-darker);
+	color: white;
+	/* padding: 1rem 10.5rem; */
+	width: 100%;
+	height: 4.4rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}

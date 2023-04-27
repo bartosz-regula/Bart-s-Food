@@ -30,3 +30,13 @@
 	font-weight: 700;
 	line-height: 1.5;
 }
+
+.add_btn {
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color-darker);
+	color: white;
+	padding: 0.5rem 2.5rem;
+	font-weight: bold;
+}

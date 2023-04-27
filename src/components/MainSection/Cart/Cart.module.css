@@ -9,11 +9,14 @@
 	position: sticky;
 	top: 2rem;
 	max-width: 100rem;
-	/* width: 100rem; */
 }
 
 .cart_container img {
 	max-width: 100%;
+}
+
+.cart_header {
+	padding-bottom: 2rem;
 }
 
 .cart_header h2 {
@@ -26,7 +29,6 @@
 .paid_delivery,
 .free_delivery {
 	text-align: center;
-	margin-bottom: 4rem;
 }
 .paid_delivery {
 	color: orange;

@@ -7,7 +7,6 @@ import classes from './MealsMenuCategory.module.css'
 
 const MealsMenuCategory = (props) => {
 	const [food, setFood] = useState([])
-
 	useEffect(function () {
 		async function getFood() {
 			let { data: Food, error } = await supabase
@@ -37,7 +36,6 @@ const MealsMenuCategory = (props) => {
 			<ul>
 				{menuList}
 			</ul>
-
 		</div>
 
 	)
