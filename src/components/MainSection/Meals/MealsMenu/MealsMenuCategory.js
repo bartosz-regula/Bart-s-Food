@@ -2,6 +2,7 @@ import MealsMenuItem from './MealsMenuItem';
 import { useEffect, useState } from "react"
 import supabase from '../../../../supabase'
 import classes from './MealsMenuCategory.module.css'
+import Logo from '../../../../assets/images/bartsfood_logo_black_yellow.png'
 
 
 
@@ -32,7 +33,10 @@ const MealsMenuCategory = (props) => {
 	return (
 
 		<div className={classes.container}>
-			<h2>{props.category}</h2>
+			<div className={classes.img_header_container}>
+				<img src={Logo} alt='Company logo'></img>
+				<h2>{props.category}</h2>
+			</div>
 			<ul>
 				{menuList}
 			</ul>

@@ -1,27 +1,19 @@
-import React, { useContext } from 'react'
-import Modal from '../UI/Modal'
-import classes from './/Payment.module.css'
+import React from 'react'
+import Modal from '../ModalWindows/Modal'
+import classes from './Payment.module.css'
 import paymentCard from '../../assets/images/paymentCard.png'
 import paymentOperators from '../../assets/images/paymentsOperators.png'
-import CartContext from "../../context/cart-context";
 
 
 
 const Payment = (props) => {
 
-	const cartCtx = useContext(CartContext)
-
-	const closePayment = () => {
-		props.onConfirm()
-		cartCtx.clearCart();
-	}
 
 	return (
 		<Modal >
 			<div className={classes.container}>
 				<div>
 					<button onClick={props.onBack} className={classes.back_btn}><ion-icon name="chevron-back-outline"></ion-icon>
-
 					</button>
 				</div>
 				<div className={classes.card_img_container}>
@@ -41,7 +33,7 @@ const Payment = (props) => {
 						<input type='number' placeholder="CCV"></input>
 					</div>
 				</form>
-				<button onClick={closePayment} className={classes.payment_btn}>Confirm Payment
+				<button onClick={props.onApprove} className={classes.payment_btn}>Confirm Payment
 				</button>
 			</div>
 		</Modal>

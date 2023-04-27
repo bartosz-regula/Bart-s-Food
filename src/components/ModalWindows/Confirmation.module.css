@@ -1,0 +1,41 @@
+.container {
+	max-width: 60rem;
+	text-align: center;
+}
+
+.container h2 {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+.container p {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.container p:nth-child(4) {
+	color: var(--primary-color);
+	margin-bottom: 1.5rem;
+}
+
+.img {
+	width: 30%;
+	margin-bottom: 1rem;
+}
+
+.time {
+	font-weight: bold;
+}
+
+.ok_btn {
+	margin-top: 1rem;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color-darker);
+	color: white;
+	width: 15%;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}

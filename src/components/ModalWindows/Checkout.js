@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../UI/Modal'
+import Modal from '../ModalWindows/Modal'
 import classes from './Checkout.module.css'
 
 const Checkout = (props) => {
