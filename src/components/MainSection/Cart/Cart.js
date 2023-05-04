@@ -48,19 +48,19 @@ const Cart = (props) => {
 				<span>£{(subtotalAmount).toFixed(2)}</span>
 			</h2>
 			{subtotalAmount <= 30 &&
-				<p className={classes.paid_delivery}> {amountMissingForFreeDelivery} missing to free delivery
+				<p className={classes.paid}> {amountMissingForFreeDelivery} missing to free delivery
 				</p>
 			}
 			{subtotalAmount >= 30 &&
-				<p className={classes.free_delivery}> You qualify for free delivery!
+				<p className={classes.free}> You qualify for free delivery!
 				</p>
 			}
 			{(subtotalAmount >= 30 && subtotalAmount < 60) &&
-				<p className={classes.paid_delivery}> Spend {amountMissingForDiscount} more and get 20% discount!
+				<p className={classes.paid}> Spend {amountMissingForDiscount} more and get 20% discount!
 				</p>
 			}
 			{subtotalAmount >= 60 &&
-				<p className={classes.free_delivery}> You have 20% discount!!
+				<p className={classes.free}> You have 20% discount!!
 				</p>
 			}
 		</div >

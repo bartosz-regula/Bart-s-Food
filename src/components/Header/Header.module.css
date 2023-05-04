@@ -1,4 +1,4 @@
-.header {
+.header_container {
 	height: 100vh;
 	position: relative;
 }
@@ -68,5 +68,7 @@
 }
 
 .order_btn:hover {
-	background-color: #ffa000;
+	/* background-color: #ffa000; */
+	background-color: var(--primary-color-darker);
+	border: 1px solid var(--primary-color-darker);
 }

@@ -16,28 +16,50 @@
 }
 
 .form h2 {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	text-align: center;
 }
 
-.form label {
-	margin-bottom: -1rem;
-}
-
-.form input {
+.control input {
 	display: block;
 	width: 100%;
 	padding: 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 2.2rem;
 	margin-top: 0.5rem;
 	border-radius: 1.2rem;
 	border: 1px solid rgb(184, 184, 184);
+	margin-top: 1rem;
+}
+
+.control input::placeholder {
+	text-transform: uppercase;
+}
+
+.control input:focus {
+	background-color: rgba(0, 137, 250, 0.1);
+	border: 1px solid rgb(0, 137, 250);
+	outline: none;
+}
+
+.invalid input {
+	border-color: #aa0b20;
+	background-color: #ffeff1;
+	margin-bottom: 0.8rem;
+	outline: none;
+}
+
+.invalid p {
+	color: #aa0b20;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	margin-left: 0.8rem;
 }
 
 .delivery {
 	font-size: 1.6rem;
 	display: flex;
 	margin-bottom: 2rem;
+	margin-top: 3rem;
 	border: 1px solid rgb(184, 184, 184);
 	padding: 1rem;
 	border-radius: 1.2rem;

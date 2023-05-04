@@ -3,11 +3,11 @@ import NavBar from './NavBar/NavBar';
 import classes from './Header.module.css';
 import videoBg from '../../assets/video/pexels-darlene-alderson-7039149-640x360-25fps.mp4';
 import companyLogo from '../../assets/images/bartsfood_logo.png';
-// import companyLogo from '../../assets/images/bartsfood_logo_yellow_stars.png';
+
 
 const Header = () => {
 	return (
-		<header className={classes.header}>
+		<header className={classes.header_container}>
 			<div className={classes.video_bg_container}>
 				<video src={videoBg} autoPlay loop muted className={classes.video_bg} />
 				<div className={classes.video_overlay}></div>

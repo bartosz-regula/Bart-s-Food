@@ -4,8 +4,8 @@ import NavBarBtn from './NavBarBtn';
 
 const NavBar = () => {
 	return (
-		<nav >
-			<ul className={classes.nav_container}>
+		<nav className={classes.nav_container}>
+			<ul className={classes.nav_items}>
 				<NavBarBtn
 					icon="logo-facebook"
 					href='https://www.facebook.com' />

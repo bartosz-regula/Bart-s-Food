@@ -1,4 +1,9 @@
 .nav_container {
+	max-width: 160rem;
+	margin: auto;
+}
+
+.nav_items {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;

@@ -5,9 +5,9 @@ import Modal from '../ModalWindows/Modal';
 import classes from '../ModalWindows/Confirmation.module.css';
 import Logo from '../../assets/images/bartsfood_logo_black_yellow.png'
 
-function getCurrentTimePlus30() {
+function getCurrentTimePlus50() {
 	const now = new Date();
-	const futureTime = new Date(now.getTime() + 30 * 60000);
+	const futureTime = new Date(now.getTime() + 50 * 60000);
 	const hours = futureTime.getHours();
 	const minutes = futureTime.getMinutes() < 10 ? '0' + futureTime.getMinutes() : futureTime.getMinutes();
 	return `${hours}:${minutes}`;
@@ -23,7 +23,7 @@ const Confirmation = (props) => {
 	}
 
 	useEffect(() => {
-		setDeliveryTime(getCurrentTimePlus30());
+		setDeliveryTime(getCurrentTimePlus50());
 	}, []);
 
 	return (

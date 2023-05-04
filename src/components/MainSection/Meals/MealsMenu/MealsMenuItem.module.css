@@ -39,4 +39,10 @@
 	color: white;
 	padding: 0.5rem 2.5rem;
 	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.add_btn:hover {
+	background-color: var(--primary-color-darker);
+	border: 1px solid var(--primary-color-darker);
 }
