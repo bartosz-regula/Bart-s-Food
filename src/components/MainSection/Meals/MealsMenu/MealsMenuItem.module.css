@@ -9,7 +9,7 @@
 
 .item {
 	padding-top: 2rem;
-	margin-right: 3rem;
+	margin-right: 7rem;
 }
 
 .item h3 {
@@ -45,4 +45,26 @@
 .add_btn:hover {
 	background-color: var(--primary-color-darker);
 	border: 1px solid var(--primary-color-darker);
+	scale: 1.05;
+}
+
+@media (max-width: 600px) {
+	.item_container {
+		display: block;
+		text-align: center;
+	}
+
+	.item {
+		padding-bottom: 1rem;
+		margin-right: 0;
+	}
+
+	.add_btn_container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.add_btn {
+		margin-bottom: 2rem;
+	}
 }

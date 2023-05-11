@@ -5,8 +5,8 @@ import MealsCategory from '../MealsCategory/MealsCategory';
 import classes from './MealsMenu.module.css'
 
 
+const MealsMenu = (props) => {
 
-const MealsMenu = () => {
 	const burgersRef = useRef(null);
 	const pizzaRef = useRef(null);
 	const kebabRef = useRef(null);
@@ -88,10 +88,12 @@ const MealsMenu = () => {
 
 	return (
 		<div className={classes.meals_container}>
+
 			<span >
 				<MealsCategory scrollToRef={scrollToRef} />
 			</span>
-			<span>
+
+			<span className={classes.menu_container}>
 				<div id="burgers" ref={burgersRef}>
 					<MealsMenuCategory category="Burgers" />
 				</div>

@@ -1,3 +1,8 @@
+.container {
+	padding: 4rem;
+	width: 40rem;
+}
+
 .close_btn {
 	position: absolute;
 	top: 1.5rem;
@@ -87,4 +92,47 @@
 	padding: 1.2rem 10.5rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.payment_btn:hover {
+	background-color: var(--primary-color-darker);
+	border: 1px solid var(--primary-color-darker);
+	scale: 1.05;
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 100vw;
+		min-width: 0;
+	}
+
+	.form h2 {
+		font-size: 2rem;
+	}
+
+	.delivery {
+		font-size: 1.2rem;
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+
+	.payment_btn {
+		padding: 1rem 5rem;
+		margin-top: 1.5rem;
+		width: 100%;
+	}
+
+	.invalid p {
+		text-align: center;
+	}
+
+	.close_btn {
+		left: 90%;
+		font-size: 2.2rem;
+		position: absolute;
+		top: 1.5rem;
+	}
 }

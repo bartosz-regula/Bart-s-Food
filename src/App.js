@@ -8,12 +8,16 @@ import Checkout
 	from './components/ModalWindows/Checkout'
 import Payment from './components/ModalWindows/Payment'
 import Confirmation from './components/ModalWindows/Confirmation'
+import CartModal from './components/ModalWindows/CartModal'
 
 const App = () => {
+
 
 	const [checkoutIsShown, setCheckoutIsShown] = useState(false);
 	const [paymentIsShown, setPaymentIsShown] = useState(false);
 	const [confirmIsShown, setConfirmIsShown] = useState(false);
+	const [cartIsShown, setCartIsShown] = useState(false);
+
 
 
 	const showCheckoutHandler = () => {
@@ -33,6 +37,14 @@ const App = () => {
 		setCheckoutIsShown(true);
 	};
 
+	const showCartHandler = () => {
+		setCartIsShown(true)
+	};
+
+	const hideCartHandler = () => {
+		setCartIsShown(false)
+	};
+
 	const approvePaymentHandler = () => {
 		setPaymentIsShown(false)
 		setConfirmIsShown(true)
@@ -44,20 +56,30 @@ const App = () => {
 
 
 
+
 	return (
 		<CartProvider>
-			{checkoutIsShown && <Checkout
-				onCloseCheckout={hideCheckoutHandler}
-				onShowPayment={showPaymentHandler} />}
-			{paymentIsShown && <Payment
-				onBack={hidePaymentHandler}
-				onApprove={approvePaymentHandler} />}
-			{confirmIsShown && <Confirmation
-				onConfirm={hideConfirmHandler} />}
+			{/* <Checkout /> */}
+			{/* <Payment /> */}
+			{/* <Confirmation /> */}
+			{/* <CartModal /> */}
+			{checkoutIsShown &&
+				<Checkout
+					onCloseCheckout={hideCheckoutHandler}
+					onShowPayment={showPaymentHandler} />}
+			{paymentIsShown &&
+				<Payment
+					onBack={hidePaymentHandler}
+					onApprove={approvePaymentHandler} />}
+			{confirmIsShown &&
+				<Confirmation
+					onConfirm={hideConfirmHandler} />}
+			{cartIsShown &&
+				<CartModal onCloseCart={hideCartHandler} onShowCheckout={showCheckoutHandler} onCloseCheckout={hideCheckoutHandler}
+				/>}
 			<Header />
-			{/* <CartButton /> */}
 			<main>
-				<MainContainer onShowCheckout={showCheckoutHandler} />
+				<MainContainer onShowCheckout={showCheckoutHandler} onShowCart={showCartHandler} />
 			</main>
 			<Footer></Footer>
 		</CartProvider>

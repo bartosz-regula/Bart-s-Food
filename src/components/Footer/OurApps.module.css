@@ -1,5 +1,13 @@
 .our_apps_img {
 	margin-top: 1.5rem;
-	height: 4rem;
+	max-height: 50%;
+	max-width: 100%;
 	margin-right: 2rem;
+}
+
+@media (max-width: 640px) {
+	.our_apps_img {
+		max-width: 80%;
+		margin-right: 0;
+	}
 }

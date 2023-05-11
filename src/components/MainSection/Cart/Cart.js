@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import classes from '../Cart/Cart.module.css'
 import CartSummary from './CartSummary';
 import CartItem from './CartItem';
@@ -9,7 +9,6 @@ import empty_basket from '../../../assets/images/empty_cart.png'
 
 const Cart = (props) => {
 	const cartCtx = useContext(CartContext)
-
 	let delivery;
 	let discount = 0;
 	const bagFee = 1.50
@@ -18,6 +17,29 @@ const Cart = (props) => {
 	const hasItems = cartCtx.items.length > 0
 	const amountMissingForFreeDelivery = `£${(30 - subtotalAmount).toFixed(2)}`;
 	const amountMissingForDiscount = `£${(60 - subtotalAmount).toFixed(2)}`;
+
+	const [cartDisplay, setCartDisplay] = useState("none");
+
+	useEffect(() => {
+		function handleResize() {
+			if (window.innerWidth <= 1200) {
+				setCartDisplay(props.display);
+			} else {
+				setCartDisplay("block");
+			}
+		}
+		window.addEventListener("resize", handleResize);
+		handleResize();
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, [props.display]);
+
+	const cartHide = {
+		display: cartDisplay
+	};
+
 
 	discount = -(subtotalAmount * 0.2);
 	if (subtotalAmount >= 60) {
@@ -43,6 +65,8 @@ const Cart = (props) => {
 
 	const header = (
 		<div className={classes.cart_header} >
+			{!cartDisplay && <button className={classes.close_btn} onClick={props.onCloseCart}><ion-icon name="close-outline"></ion-icon>
+			</button>}
 			<h2>
 				<span>Your order</span>
 				<span>£{(subtotalAmount).toFixed(2)}</span>
@@ -60,7 +84,7 @@ const Cart = (props) => {
 				</p>
 			}
 			{subtotalAmount >= 60 &&
-				<p className={classes.free}> You have 20% discount!!
+				<p className={classes.free}> You have 20% discount!
 				</p>
 			}
 		</div >
@@ -80,10 +104,12 @@ const Cart = (props) => {
 
 	return (
 		<div>
-			<div className={classes.cart_container}>
+			<div className={classes.cart_container} style={cartHide}>
 
 				{!hasItems &&
-					<div>
+					<div className={classes.cart_empty_container}>
+						{!cartDisplay && <button className={classes.close_btn} onClick={props.onCloseCart}><ion-icon name="close-outline"></ion-icon>
+						</button>}
 						<img src={empty_basket} alt='Empty basket' />
 					</div>}
 				{hasItems &&
@@ -92,7 +118,7 @@ const Cart = (props) => {
 						<section className={classes.cart_items_list}>
 							{cartList}
 						</section>
-						<div>
+						<div className={classes.summary_list}>
 							<CartSummary
 								name='Subtotal'
 								price={subtotalAmount}

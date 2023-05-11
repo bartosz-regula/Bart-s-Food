@@ -1,6 +1,6 @@
 .main_container {
-	width: 31rem;
-	margin: auto;
+	padding: 4rem;
+	width: 40rem;
 }
 
 .card_container {
@@ -92,7 +92,6 @@
 
 .invalid p {
 	color: #aa0b20;
-	/* margin-bottom: 2rem; */
 	font-size: 1.2rem;
 	margin-left: 0.8rem;
 }
@@ -108,4 +107,43 @@
 	height: 4.4rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.payment_btn:hover {
+	background-color: var(--primary-color-darker);
+	border: 1px solid var(--primary-color-darker);
+	scale: 1.05;
+}
+
+@media (max-width: 400px) {
+	.main_container {
+		width: 100vw;
+	}
+
+	.invalid p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 350px) {
+	.operators_container img {
+		margin-top: -3rem;
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+
+	.payment_btn {
+		width: 100%;
+		height: 4rem;
+	}
+
+	.main_container {
+		min-width: 30rem;
+	}
+
+	.invalid p {
+		font-size: 0.8rem;
+		text-align: center;
+	}
 }

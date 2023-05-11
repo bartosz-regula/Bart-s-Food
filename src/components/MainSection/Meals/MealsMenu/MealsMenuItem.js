@@ -24,7 +24,9 @@ const MealsMenuItem = (props) => {
 				<p>{props.description}</p>
 				<div className={classes.price}>from £{props.price.toFixed(2)}</div>
 			</div>
-			<button onClick={addToCartHandler} className={classes.add_btn}>Add</button>
+			<div className={classes.add_btn_container}>
+				<button onClick={addToCartHandler} className={classes.add_btn}>Add</button>
+			</div>
 		</li>
 
 	)

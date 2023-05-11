@@ -30,7 +30,7 @@ const Footer = () => {
 				</div>
 
 				<div className={classes.contact_container}>
-					<div>Contact us</div>
+					<div className={classes.contact_header}>Contact us</div>
 					<div className={classes.contact_details}>
 						<p>
 							<span className={classes.contact_details_icon}><ion-icon name="call"></ion-icon></span> 7424441519
@@ -44,9 +44,11 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div>
+				<div className={classes.container_payment_img}>
 					<img className={classes.payment_img} src={paymentOperators} alt='Payment operators'></img>
 				</div>
+
+
 			</div>
 			<div className={classes.copyright}>Copyright © 2023 by Bart's Food, Inc. All rights reserved.</div>
 

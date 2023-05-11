@@ -2,8 +2,30 @@
 	display: grid;
 	grid-template-columns: 70% 30%;
 	margin: 0 auto;
-	padding-left: 82px;
-	padding-right: 82px;
+	padding-left: 4rem;
+	padding-right: 4rem;
 	width: 100%;
 	max-width: 160rem;
+	position: relative;
+	z-index: 0;
+}
+
+@media (max-width: 1200px) {
+	.main_container {
+		display: block;
+		max-height: 90%;
+	}
+}
+
+@media (max-width: 750px) {
+	.main_container {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+}
+@media (max-width: 600px) {
+	.main_container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }

@@ -39,8 +39,8 @@
 }
 
 .logo {
-	height: 400px;
-	width: 400px;
+	height: 40rem;
+	width: 40rem;
 }
 
 .logo_text {
@@ -49,26 +49,56 @@
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .order_btn {
-	margin-top: 3rem;
-	padding: 1rem 2rem;
-	background-color: var(--primary-color);
-	border: none;
-	border-radius: 30px;
-	color: white;
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-transform: uppercase;
+	border-radius: 20px;
+	font-size: 1.8rem;
 	cursor: pointer;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color-darker);
+	color: white;
+	padding: 1rem 2.5rem;
+	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 	text-decoration: none;
+	margin-top: 3.6rem;
 }
 
 .order_btn:hover {
-	/* background-color: #ffa000; */
 	background-color: var(--primary-color-darker);
 	border: 1px solid var(--primary-color-darker);
+	scale: 1.05;
+}
+
+.header_container p {
+	color: white;
+}
+
+@media (max-width: 600px) {
+	.logo {
+		height: 30rem;
+		width: 30rem;
+		margin-top: 10rem;
+	}
+
+	.logo_text {
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: 400px) {
+	.logo {
+		margin-top: 15rem;
+		height: 25rem;
+		width: 25rem;
+	}
+
+	.logo_text {
+		font-size: 1.4rem;
+	}
+
+	.order_btn {
+		font-size: 1.4rem;
+	}
 }

@@ -30,3 +30,9 @@
 	color: orange;
 	border-left: 2px solid orange;
 }
+
+@media (max-width: 750px) {
+	.meals_category {
+		display: none;
+	}
+}

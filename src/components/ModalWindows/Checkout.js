@@ -93,51 +93,52 @@ const Checkout = (props) => {
 
 	return (
 		<Modal onClose={props.onClose}>
-			<button className={classes.close_btn} onClick={props.onCloseCheckout}><ion-icon name="close-outline"></ion-icon>
-			</button>
-			<form className={classes.form}>
-				<h2>Confirm your details!</h2>
-				<div className={nameControlClasses}>
-					<input
-						type='text'
-						placeholder='Your Name'
-						onChange={handleName}
-						ref={nameInputRef}>
-					</input>
-					{!formInputsValidity.name && <p>The name can't be empty!</p>}
-				</div>
+			<div className={classes.container}>
+				<button className={classes.close_btn} onClick={props.onCloseCheckout}><ion-icon name="close-outline"></ion-icon>
+				</button>
+				<form className={classes.form}>
+					<h2>Confirm your details!</h2>
+					<div className={nameControlClasses}>
+						<input
+							type='text'
+							placeholder='Your Name'
+							onChange={handleName}
+							ref={nameInputRef}>
+						</input>
+						{!formInputsValidity.name && <p>The name can't be empty!</p>}
+					</div>
 
-				<div className={mobileControlClasses}>
-					<input type='tel' maxLength="10" id='phone' placeholder='Mobile number' onChange={handleMobile}
-						ref={mobileInputRef}></input>
-					{!formInputsValidity.mobile && <p>The mobile number must be exactly 10 digits long!</p>}
+					<div className={mobileControlClasses}>
+						<input type='tel' maxLength="10" id='phone' placeholder='Mobile number' onChange={handleMobile}
+							ref={mobileInputRef}></input>
+						{!formInputsValidity.mobile && <p>The mobile number must be exactly 10 digits long!</p>}
 
-				</div>
-				<div className={streetControlClasses}>
-					<input type='text' id='Street' placeholder='Street' onChange={handleStreet} ref={streetInputRef}></input>
-					{!formInputsValidity.street && <p>The street can't be empty!</p>}
+					</div>
+					<div className={streetControlClasses}>
+						<input type='text' id='Street' placeholder='Street' onChange={handleStreet} ref={streetInputRef}></input>
+						{!formInputsValidity.street && <p>The street can't be empty!</p>}
 
-				</div>
-				<div className={cityControlClasses}>
-					<input type='text' id='city' placeholder='City' onChange={handleCity} ref={cityInputRef}></input>
-					{!formInputsValidity.city && <p>The city can't be empty!</p>}
+					</div>
+					<div className={cityControlClasses}>
+						<input type='text' id='city' placeholder='City' onChange={handleCity} ref={cityInputRef}></input>
+						{!formInputsValidity.city && <p>The city can't be empty!</p>}
 
-				</div>
-				<div className={postCodeControlClasses}>
-					<input type='text' id='postcode' placeholder='Postcode' onChange={handlePostCode} ref={postCodeInputRef}></input>
-					{!formInputsValidity.postCode && <p>The postcode must be exactly 7 characters long!</p>}
+					</div>
+					<div className={postCodeControlClasses}>
+						<input type='text' id='postcode' placeholder='Postcode' onChange={handlePostCode} ref={postCodeInputRef}></input>
+						{!formInputsValidity.postCode && <p>The postcode must be exactly 7 characters long!</p>}
 
-				</div>
-			</form>
-			<section className={classes.delivery}>
-				<span className={classes.icon}><ion-icon name="time-outline"></ion-icon></span>
-				<span>
-					<h4>Delivery time:</h4>
-					<p>Estimated time: 35min - 50min</p>
-				</span>
-			</section>
-			<button onClick={confirmHandler} className={classes.payment_btn}>Go to payment</button>
-
+					</div>
+				</form>
+				<section className={classes.delivery}>
+					<span className={classes.icon}><ion-icon name="time-outline"></ion-icon></span>
+					<span>
+						<h4>Delivery time:</h4>
+						<p>Estimated time: 35min - 50min</p>
+					</span>
+				</section>
+				<button onClick={confirmHandler} className={classes.payment_btn}>Go to payment</button>
+			</div>
 		</Modal>
 
 

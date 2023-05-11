@@ -1,5 +1,6 @@
 .container {
-	max-width: 60rem;
+	width: 60rem;
+	padding: 4rem;
 	text-align: center;
 }
 
@@ -34,8 +35,53 @@
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color-darker);
 	color: white;
-	width: 15%;
+	width: 10rem;
 	height: 3rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.ok_btn:hover {
+	background-color: var(--primary-color-darker);
+	border: 1px solid var(--primary-color-darker);
+	scale: 1.05;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 100vw;
+	}
+
+	.container h2 {
+		font-size: 2.6rem;
+	}
+
+	.container p {
+		font-size: 1.6rem;
+	}
+
+	.container p:nth-child(4) {
+		margin-bottom: 1.2rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.container h2 {
+		font-size: 2rem;
+	}
+
+	.container p {
+		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.container p:nth-child(4) {
+		margin-top: 1rem;
+	}
+
+	.ok_btn {
+		font-size: 1.2rem;
+		margin-top: 2rem;
+	}
 }

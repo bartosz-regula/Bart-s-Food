@@ -13,3 +13,12 @@
 	padding-top: 4rem;
 	padding-right: 4rem;
 }
+
+@media (max-width: 600px) {
+	.nav_items {
+		justify-content: center;
+		padding-right: 0;
+		margin-left: 1rem;
+		padding-top: 5rem;
+	}
+}

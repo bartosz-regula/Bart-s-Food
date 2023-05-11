@@ -7,6 +7,10 @@
 	margin-bottom: 2rem;
 }
 
+.container_mobile_menu {
+	display: none;
+}
+
 .container li:last-child {
 	border-bottom: none;
 }
@@ -23,4 +27,43 @@
 
 .img_header_container {
 	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 100%;
+	}
+}
+@media (max-width: 750px) {
+	.container {
+		margin-top: 1rem;
+	}
+	.container h2 {
+		display: none;
+	}
+	.container_mobile_menu {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid var(--border-color);
+		padding: 1.7rem 1rem 1rem 1rem;
+		width: 88vw;
+		/* max-width: 88%; */
+	}
+
+	.container_mobile_menu button {
+		background-color: transparent;
+		border: none;
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.container img {
+		width: 15%;
+	}
+
+	/* .meals_menu_category_container {
+		background-color: yellow;
+		padding-right: 15rem;
+	} */
 }

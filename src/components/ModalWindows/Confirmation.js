@@ -29,11 +29,11 @@ const Confirmation = (props) => {
 	return (
 		<Modal>
 			<div className={classes.container}>
-				<div>
+				<div className={classes.container_content}>
 					<h2>Payment Approved!</h2>
 					<p>Thank you for choosing our restaurant for your meal! </p>
 					<img className={classes.img} src={Logo} alt="Bart's Food Logo" />
-					<p>We will deliver to you by <span className={classes.time}>{deliveryTime}</span>.</p>
+					<p>Your order will be delivered to you by <span className={classes.time}>{deliveryTime}</span>.</p>
 				</div>
 				<div>
 					<button onClick={closeConfirmation} className={classes.ok_btn}>OK</button>
