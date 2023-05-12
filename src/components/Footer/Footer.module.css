@@ -51,6 +51,7 @@ footer {
 	.container_payment_img {
 		grid-row: 1;
 		grid-column: 2;
+		margin-top: 0.6rem;
 	}
 
 	.contact_container {
@@ -70,12 +71,16 @@ footer {
 		display: block;
 	}
 
+	.contact_container {
+		margin-top: 1.2rem;
+	}
+
 	.contact_details {
 		display: block;
 	}
 
 	.payment_img {
-		max-width: 80%;
+		max-width: 100%;
 	}
 }
 

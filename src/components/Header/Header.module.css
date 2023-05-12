@@ -58,7 +58,7 @@
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color-darker);
 	color: white;
-	padding: 1rem 2.5rem;
+	padding: 1rem 2rem;
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 	text-decoration: none;
@@ -100,5 +100,74 @@
 
 	.order_btn {
 		font-size: 1.4rem;
+	}
+}
+
+@media (max-height: 800px) {
+	.logo {
+		height: 30rem;
+		width: 30rem;
+		margin-top: 10rem;
+	}
+}
+
+@media (max-height: 600px) {
+	.logo {
+		height: 25rem;
+		width: 25rem;
+	}
+
+	.logo_text {
+		font-size: 1.4rem;
+	}
+
+	.order_btn {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-height: 500px) {
+	.logo {
+		height: 20rem;
+		width: 20rem;
+	}
+
+	.logo_text {
+		font-size: 1.4rem;
+	}
+
+	.order_btn {
+		font-size: 1rem;
+		padding: 0.8rem 2.5rem;
+	}
+}
+
+@media (max-height: 400px) {
+	.logo {
+		height: 15rem;
+		width: 15rem;
+	}
+
+	.logo_text {
+		font-size: 1.2rem;
+	}
+
+	.order_btn {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-height: 300px) {
+	.logo {
+		height: 12rem;
+		width: 12rem;
+	}
+
+	.logo_text {
+		font-size: 1rem;
+	}
+
+	.order_btn {
+		font-size: 0.8rem;
 	}
 }

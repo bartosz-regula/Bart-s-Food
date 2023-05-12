@@ -13,7 +13,7 @@ const MainContainer = (props) => {
 		<div id="main" className={classes.main_container}>
 			<CartButton onShowCart={props.onShowCart} />
 			<MealsMenu />
-			<Cart onShowCheckout={props.onShowCheckout} {...cartProps} />
+			<Cart onShowCheckout={props.onShowCheckout} onCloseCart={props.onCloseCart} {...cartProps} />
 		</div>
 	)
 }

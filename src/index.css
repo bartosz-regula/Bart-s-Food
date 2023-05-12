@@ -30,3 +30,7 @@ body {
 	font-weight: 400;
 	background-color: var(--primiary-background-color);
 }
+
+::-webkit-scrollbar {
+	display: none;
+}

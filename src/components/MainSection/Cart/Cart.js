@@ -100,7 +100,10 @@ const Cart = (props) => {
 			onAdd={cartItemAddHandler.bind(null, item)} />
 
 	));
-
+	const test = () => {
+		props.onShowCheckout();
+		props.onCloseCart()
+	}
 
 	return (
 		<div>
@@ -152,7 +155,7 @@ const Cart = (props) => {
 							</CartSummary>
 							<div >
 								<button
-									className={classes.checkout_btn} onClick={props.onShowCheckout}>Go to checkout
+									className={classes.checkout_btn} onClick={test}>Go to checkout
 								</button>
 							</div>
 						</div>

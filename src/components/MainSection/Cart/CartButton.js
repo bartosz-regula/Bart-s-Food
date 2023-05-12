@@ -11,11 +11,13 @@ const CartButton = (props) => {
 	}, 0);
 
 	return (
+
 		<button className={classes.cart_btn} onClick={props.onShowCart}>
 			<span className={classes.icon}><ion-icon name="cart-outline"></ion-icon>
 			</span>
 			<span className={classes.badge}>{numberOfCartItems}</span>
 		</button>
+
 	)
 }
 

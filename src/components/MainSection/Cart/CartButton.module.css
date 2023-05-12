@@ -1,22 +1,20 @@
 .cart_btn {
+	padding: 1rem 2rem;
+	top: 5rem;
+	margin-top: 2rem;
+	margin-left: 3rem;
 	cursor: pointer;
 	font: inherit;
 	background-color: transparent;
 	color: white;
 	color: var(--primary-color-darker);
-	padding: 0.5rem 0;
 	border-radius: 25px;
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
-	position: sticky;
-	padding: 1rem;
-	top: 5rem;
-	margin-top: 2rem;
-	margin-left: 3rem;
 	z-index: 1;
 	display: none;
 	border: none;
-	max-height: 5vh;
+	position: sticky;
 }
 
 .icon {
@@ -33,10 +31,9 @@
 
 @media (max-width: 1200px) {
 	.cart_btn {
-		top: 93vh;
+		top: 92%;
 		left: 48vw;
 		margin-top: 22vh;
-		margin-bottom: 3vh;
 		background-color: var(--primary-color);
 		position: sticky;
 		color: white;
@@ -44,8 +41,10 @@
 		justify-content: center;
 		align-items: center;
 		padding: 0;
-		width: 15rem;
-		height: 4.5rem;
+		width: 20rem;
+		height: 4rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.cart_btn:hover {
@@ -66,37 +65,23 @@
 
 @media (max-width: 750px) {
 	.cart_btn {
-		left: 40vw;
+		left: 0;
 		margin-bottom: -6vh;
 	}
 }
-@media (max-width: 700px) {
-	.cart_btn {
-		left: 38vw;
-	}
-}
-@media (max-width: 600px) {
-	.cart_btn {
-		left: 40.5vw;
-		width: 11rem;
-		height: 3.8rem;
-	}
-}
-@media (max-width: 500px) {
-	.cart_btn {
-		left: 39vw;
-	}
-}
-@media (max-width: 400px) {
-	.cart_btn {
-		left: 36vw;
-	}
-}
 
-@media (max-width: 300px) {
+@media (max-height: 500px) {
 	.cart_btn {
-		left: 34vw;
-		width: 10rem;
-		height: 3.5rem;
+		top: 88%;
+	}
+}
+@media (max-height: 400px) {
+	.cart_btn {
+		top: 86%;
+	}
+}
+@media (max-height: 300px) {
+	.cart_btn {
+		top: 84%;
 	}
 }

@@ -36,7 +36,7 @@ const Footer = () => {
 							<span className={classes.contact_details_icon}><ion-icon name="call"></ion-icon></span> 7424441519
 						</p>
 						<p>
-							<span className={classes.contact_details_icon}><ion-icon name="mail"></ion-icon></span> bartsfood@gmail.com
+							<span className={classes.contact_details_icon}><ion-icon name="mail-open"></ion-icon></span> bartsfood@gmail.com
 						</p>
 						<p>
 							<span className={classes.contact_details_icon}><ion-icon name="home"></ion-icon></span> 9748 Abingdon St, London SW1P 3JY

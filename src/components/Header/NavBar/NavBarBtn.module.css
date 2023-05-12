@@ -10,3 +10,27 @@
 	color: orange;
 	text-decoration: none;
 }
+
+@media (max-height: 400px) {
+	.nav_btn:link,
+	.nav_btn:visited {
+		font-size: 3.2rem;
+	}
+
+	.nav_btn:hover,
+	.nav_btn:active {
+		font-size: 3.2rem;
+	}
+}
+
+@media (max-height: 300px) {
+	.nav_btn:link,
+	.nav_btn:visited {
+		font-size: 3rem;
+	}
+
+	.nav_btn:hover,
+	.nav_btn:active {
+		font-size: 3rem;
+	}
+}

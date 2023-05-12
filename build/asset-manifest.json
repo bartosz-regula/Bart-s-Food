@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c1fe0a0.css",
+    "main.js": "/static/js/main.7ac8fb25.js",
+    "static/media/pexels-darlene-alderson-7039149-640x360-25fps.mp4": "/static/media/pexels-darlene-alderson-7039149-640x360-25fps.2b5b805f434f7af899f3.mp4",
+    "static/media/paymentCard.png": "/static/media/paymentCard.f0db14f7b015819b7061.png",
+    "static/media/bartsfood_logo_black_yellow.png": "/static/media/bartsfood_logo_black_yellow.af589db96d06cfde75ee.png",
+    "static/media/bartsfood_logo_yellow_stars.png": "/static/media/bartsfood_logo_yellow_stars.d24a82b50e17d1ba5236.png",
+    "static/media/paymentsOperators.png": "/static/media/paymentsOperators.4095995f2042e2d5333d.png",
+    "static/media/huawei.png": "/static/media/huawei.159e9c4e3c9a0503f8a8.png",
+    "index.html": "/index.html",
+    "main.2c1fe0a0.css.map": "/static/css/main.2c1fe0a0.css.map",
+    "main.7ac8fb25.js.map": "/static/js/main.7ac8fb25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c1fe0a0.css",
+    "static/js/main.7ac8fb25.js"
+  ]
+}

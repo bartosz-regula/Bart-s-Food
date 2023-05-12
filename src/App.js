@@ -79,7 +79,7 @@ const App = () => {
 				/>}
 			<Header />
 			<main>
-				<MainContainer onShowCheckout={showCheckoutHandler} onShowCart={showCartHandler} />
+				<MainContainer onShowCheckout={showCheckoutHandler} onShowCart={showCartHandler} onCloseCart={hideCartHandler} />
 			</main>
 			<Footer></Footer>
 		</CartProvider>

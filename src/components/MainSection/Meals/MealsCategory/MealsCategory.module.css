@@ -26,7 +26,7 @@
 	border-left: 2px solid orange;
 }
 
-.meals_category .active li {
+.meals_category .active {
 	color: orange;
 	border-left: 2px solid orange;
 }

@@ -32,6 +32,8 @@
 @media (max-width: 1200px) {
 	.container {
 		max-width: 100%;
+		margin-top: 5rem;
+		margin-bottom: 4rem;
 	}
 }
 @media (max-width: 750px) {
@@ -47,7 +49,6 @@
 		border-top: 1px solid var(--border-color);
 		padding: 1.7rem 1rem 1rem 1rem;
 		width: 88vw;
-		/* max-width: 88%; */
 	}
 
 	.container_mobile_menu button {
