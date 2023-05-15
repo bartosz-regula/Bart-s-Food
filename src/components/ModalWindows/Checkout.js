@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Modal from '../ModalWindows/Modal'
 import classes from './Checkout.module.css'
 
@@ -31,7 +31,37 @@ const handlePostCode = (event) => {
 };
 
 
+
 const Checkout = (props) => {
+
+	useEffect(() => {
+		function handleEscKeyPress(event) {
+			if (event.key === 'Escape') {
+				props.onCloseCheckout();
+			}
+		}
+
+		window.addEventListener('keydown', handleEscKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleEscKeyPress);
+		};
+	}, [props]);
+
+	useEffect(() => {
+		function handleEnterKeyPress(event) {
+			if (event.key === 'Enter') {
+				confirmHandler();
+			}
+		}
+
+		window.addEventListener('keydown', handleEnterKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleEnterKeyPress);
+		};
+	}, []);
+
 	const [formInputsValidity, setFormInputsValidity] = useState({
 		name: true,
 		mobile: true,
@@ -49,7 +79,10 @@ const Checkout = (props) => {
 
 
 	const confirmHandler = (event) => {
-		event.preventDefault();
+		if (event) {
+			event.preventDefault();
+		}
+
 
 		const enteredName = nameInputRef.current.value;
 		const enteredMobile = mobileInputRef.current.value;

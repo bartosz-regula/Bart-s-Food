@@ -23,6 +23,20 @@ const Confirmation = (props) => {
 	}
 
 	useEffect(() => {
+		function handleEscKeyPress(event) {
+			if (event.key === 'Escape' || event.key === 'Enter') {
+				closeConfirmation();
+			}
+		}
+
+		window.addEventListener('keydown', handleEscKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleEscKeyPress);
+		};
+	}, [props]);
+
+	useEffect(() => {
 		setDeliveryTime(getCurrentTimePlus50());
 	}, []);
 

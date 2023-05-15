@@ -12,6 +12,7 @@
 
 @media (max-width: 1200px) {
 	.main_container {
+		padding-top: 4rem;
 		display: block;
 		max-height: 90%;
 	}

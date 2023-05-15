@@ -85,3 +85,10 @@
 		margin-top: 2rem;
 	}
 }
+
+@media (max-height: 600px) {
+	.container {
+		max-height: 90vh;
+		overflow: auto;
+	}
+}

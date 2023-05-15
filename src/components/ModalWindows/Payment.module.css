@@ -69,6 +69,13 @@
 	border-radius: 1.2rem;
 	border: 1px solid rgb(184, 184, 184);
 	margin-top: 2rem;
+	background-color: white;
+}
+
+.control select {
+	width: 20rem;
+	color: black;
+	-webkit-appearance: none;
 }
 
 .control input::placeholder {
@@ -144,6 +151,20 @@
 
 	.invalid p {
 		font-size: 0.8rem;
+		text-align: center;
+	}
+}
+
+@media (max-height: 600px) {
+	.main_container {
+		overflow: auto;
+		max-height: 90vh;
+		position: relative;
+	}
+
+	.card_container {
+		width: 100%;
+		margin-top: -8rem;
 		text-align: center;
 	}
 }

@@ -20,6 +20,8 @@ const Cart = (props) => {
 
 	const [cartDisplay, setCartDisplay] = useState("none");
 
+
+
 	useEffect(() => {
 		function handleResize() {
 			if (window.innerWidth <= 1200) {

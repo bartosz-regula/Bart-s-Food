@@ -102,12 +102,14 @@
 @media (max-width: 1200px) {
 	.cart_container {
 		border: none;
-		padding: 4rem;
 		width: 40rem;
 	}
 	.close_btn {
 		margin-top: -1.5rem;
 		font-size: 2.2rem;
+	}
+	.cart_items_list {
+		max-height: 50vh;
 	}
 }
 
@@ -115,18 +117,20 @@
 	.cart_container {
 		width: 100vw;
 		min-width: 0;
-		padding: 2rem;
+		padding: 1rem;
 	}
 }
 @media (max-width: 300px) {
 	.cart_container {
-		width: 100vw;
 		min-width: 30rem;
 		padding: 2rem;
 	}
 }
 
 @media (max-height: 1300px) {
+	.cart_container {
+		overflow: auto;
+	}
 	.cart_items_list {
 		max-height: 58vh;
 	}
@@ -134,34 +138,22 @@
 
 @media (max-height: 1200px) {
 	.cart_items_list {
-		max-height: 55vh;
+		max-height: 50vh;
 	}
 }
 @media (max-height: 1100px) {
 	.cart_items_list {
-		max-height: 50vh;
+		max-height: 45vh;
 	}
 }
 @media (max-height: 1000px) {
 	.cart_items_list {
-		max-height: 44vh;
+		max-height: 40vh;
 	}
 }
 
 @media (max-height: 900px) {
 	.cart_items_list {
-		max-height: 36vh;
-	}
-}
-@media (max-height: 800px) {
-	.cart_items_list {
-		max-height: 29vh;
-	}
-}
-
-@media (max-height: 700px) {
-	.cart_items_list {
-		max-height: 15vh;
-		min-height: 15vh;
+		max-height: 20vh;
 	}
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Modal from '../ModalWindows/Modal'
 import classes from './Payment.module.css'
 import paymentCard from '../../assets/images/paymentCard.png'
@@ -31,6 +31,34 @@ const handleCcvChange = (event) => {
 
 const Payment = (props) => {
 
+	useEffect(() => {
+		function handleEscKeyPress(event) {
+			if (event.key === 'Escape') {
+				props.onBack();
+			}
+		}
+
+		window.addEventListener('keydown', handleEscKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleEscKeyPress);
+		};
+	}, [props]);
+
+	useEffect(() => {
+		function handleEnterKeyPress(event) {
+			if (event.key === 'Enter') {
+				confirmHandler();
+			}
+		}
+
+		window.addEventListener('keydown', handleEnterKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleEnterKeyPress);
+		};
+	}, []);
+
 	const [formInputsValidity, setFormInputsValidity] = useState({
 
 		cardNumber: true,
@@ -48,7 +76,9 @@ const Payment = (props) => {
 	const ccvInputRef = useRef();
 
 	const confirmHandler = (event) => {
-		event.preventDefault();
+		if (event) {
+			event.preventDefault();
+		}
 
 		const enteredCardNumber = (cardNumberInputRef.current.value);
 		const enteredCardHolder = cardHolderInputRef.current.value;

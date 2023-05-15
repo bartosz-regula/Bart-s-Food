@@ -55,16 +55,12 @@
 		background-color: transparent;
 		border: none;
 		font-size: 2rem;
+		color: black;
 	}
 }
 
 @media (max-width: 600px) {
 	.container img {
-		width: 15%;
+		width: 18%;
 	}
-
-	/* .meals_menu_category_container {
-		background-color: yellow;
-		padding-right: 15rem;
-	} */
 }

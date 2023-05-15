@@ -52,11 +52,24 @@
 	.item_container {
 		display: block;
 		text-align: center;
+		margin: 4rem 2.8rem;
 	}
 
 	.item {
 		padding-bottom: 1rem;
 		margin-right: 0;
+		padding-top: 0;
+	}
+
+	.item h3 {
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+	}
+
+	.item p,
+	.price {
+		line-height: 1.8rem;
+		font-size: 1.4rem;
 	}
 
 	.add_btn_container {
@@ -66,5 +79,7 @@
 
 	.add_btn {
 		margin-bottom: 2rem;
+		padding: 0.3rem 1.8rem;
+		font-size: 1.2rem;
 	}
 }

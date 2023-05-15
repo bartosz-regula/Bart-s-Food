@@ -13,6 +13,7 @@ import CartModal from './components/ModalWindows/CartModal'
 const App = () => {
 
 
+
 	const [checkoutIsShown, setCheckoutIsShown] = useState(false);
 	const [paymentIsShown, setPaymentIsShown] = useState(false);
 	const [confirmIsShown, setConfirmIsShown] = useState(false);
