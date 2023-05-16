@@ -56,10 +56,10 @@
 }
 
 .paid {
-	color: #f59f00;
+	color: var(--paid_color);
 }
 .free {
-	color: #37b24d;
+	color: var(--free_color);
 }
 
 .checkout_btn {
@@ -68,7 +68,7 @@
 	cursor: pointer;
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color-darker);
-	color: white;
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 1.5rem;
 	padding: 1.3rem;

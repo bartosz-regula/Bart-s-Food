@@ -1,8 +1,6 @@
-
-
 import React from 'react'
 import MealsMenuCategory from './MealsMenuCategory'
-import MealsCategory from '../MealsCategory/MealsCategory';
+import MealsCategory from './MealsCategory';
 import classes from './MealsMenu.module.css'
 
 

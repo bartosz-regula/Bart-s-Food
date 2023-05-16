@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Modal from './Modal';
 import Cart from '../MainSection/Cart/Cart';
-import classes from '../ModalWindows/CartModal.module.css'
 
 const CartModal = (props) => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);

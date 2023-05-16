@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1dfb986.css",
-    "main.js": "/static/js/main.48272aaa.js",
+    "main.css": "/static/css/main.1b8a6374.css",
+    "main.js": "/static/js/main.32000058.js",
     "static/media/Mój film.mp4": "/static/media/Mój film.54da5ec56da336dfc392.mp4",
     "static/media/paymentCard.png": "/static/media/paymentCard.f0db14f7b015819b7061.png",
     "static/media/bartsfood_logo_black_yellow.png": "/static/media/bartsfood_logo_black_yellow.af589db96d06cfde75ee.png",
@@ -9,11 +9,11 @@
     "static/media/paymentsOperators.png": "/static/media/paymentsOperators.4095995f2042e2d5333d.png",
     "static/media/huawei.png": "/static/media/huawei.159e9c4e3c9a0503f8a8.png",
     "index.html": "/index.html",
-    "main.b1dfb986.css.map": "/static/css/main.b1dfb986.css.map",
-    "main.48272aaa.js.map": "/static/js/main.48272aaa.js.map"
+    "main.1b8a6374.css.map": "/static/css/main.1b8a6374.css.map",
+    "main.32000058.js.map": "/static/js/main.32000058.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1dfb986.css",
-    "static/js/main.48272aaa.js"
+    "static/css/main.1b8a6374.css",
+    "static/js/main.32000058.js"
   ]
 }

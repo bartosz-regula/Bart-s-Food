@@ -10,7 +10,7 @@
 	align-items: center;
 	margin-top: 2rem;
 	padding-bottom: 1rem;
-	border-bottom: 0.1px solid #d4d2d2;
+	border-bottom: 0.1px solid var(--border-bottom-color);
 }
 
 .cart_item_summary {

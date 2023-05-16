@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useContext } from 'react';
-import CartContext from "../../context/cart-context";
-
 import Modal from '../ModalWindows/Modal';
 import classes from '../ModalWindows/Confirmation.module.css';
-import Logo from '../../assets/images/bartsfood_logo_black_yellow.png'
+import Logo from '../../assets/images/bartsfood_logo_black_yellow.png';
+import CartContext from '../../context/cart-context';
 
-function getCurrentTimePlus50() {
+
+const getCurrentTimePlus50 = () => {
 	const now = new Date();
 	const futureTime = new Date(now.getTime() + 50 * 60000);
 	const hours = futureTime.getHours();
 	const minutes = futureTime.getMinutes() < 10 ? '0' + futureTime.getMinutes() : futureTime.getMinutes();
 	return `${hours}:${minutes}`;
-}
+};
+
 
 const Confirmation = (props) => {
 	const [deliveryTime, setDeliveryTime] = useState('');

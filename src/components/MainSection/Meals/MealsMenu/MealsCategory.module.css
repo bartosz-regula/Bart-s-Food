@@ -22,13 +22,13 @@
 
 .meals_category li:hover,
 .meals_category li:active {
-	color: orange;
-	border-left: 2px solid orange;
+	color: var(--meals_category_cative-color);
+	border-left: 2px solid var(--meals_category_cative-color);
 }
 
 .meals_category .active {
-	color: orange;
-	border-left: 2px solid orange;
+	color: var(--meals_category_cative-color);
+	border-left: 2px solid var(--meals_category_cative-color);
 }
 
 @media (max-width: 750px) {

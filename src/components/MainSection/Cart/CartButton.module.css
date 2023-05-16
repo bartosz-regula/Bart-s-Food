@@ -6,7 +6,7 @@
 	cursor: pointer;
 	font: inherit;
 	background-color: transparent;
-	color: white;
+	color: #ffffff;
 	color: var(--primary-color-darker);
 	border-radius: 25px;
 	font-weight: bold;
@@ -57,7 +57,7 @@
 		margin-top: 22vh;
 		background-color: var(--primary-color);
 		position: sticky;
-		color: white;
+		color: #ffffff;
 		display: flex;
 		justify-content: center;
 		align-items: center;

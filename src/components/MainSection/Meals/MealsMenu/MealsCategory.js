@@ -40,46 +40,74 @@ const MealsCategory = () => {
 	return (
 		<div className={classes.meals_category}>
 			<ul>
-				<li onClick={() => handleClick('burgers')} className={activeId === 'burgers' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('burgers')}
+					className={activeId === 'burgers' ? classes.active : ''}>
 					Burgers
 				</li>
-				<li onClick={() => handleClick('pizzas')} className={activeId === 'pizzas' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('pizzas')}
+					className={activeId === 'pizzas' ? classes.active : ''}>
 					Pizzas
 				</li>
-				<li onClick={() => handleClick('kebabs')} className={activeId === 'kebabs' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('kebabs')}
+					className={activeId === 'kebabs' ? classes.active : ''}>
 					Kebabs
 				</li>
-				<li onClick={() => handleClick('wraps')} className={activeId === 'wraps' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('wraps')}
+					className={activeId === 'wraps' ? classes.active : ''}>
 					Wraps
 				</li>
-				<li onClick={() => handleClick('pittas')} className={activeId === 'pittas' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('pittas')}
+					className={activeId === 'pittas' ? classes.active : ''}>
 					Pittas
 				</li>
-				<li onClick={() => handleClick('sandwiches')} className={activeId === 'sandwiches' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('sandwiches')}
+					className={activeId === 'sandwiches' ? classes.active : ''}>
 					Sandwiches
 				</li>
-				<li onClick={() => handleClick('beef-dogs')} className={activeId === 'beef-dogs' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('beef-dogs')}
+					className={activeId === 'beef-dogs' ? classes.active : ''}>
 					Beef Dogs
 				</li>
-				<li onClick={() => handleClick('salads')} className={activeId === 'salads' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('salads')}
+					className={activeId === 'salads' ? classes.active : ''}>
 					Salads
 				</li>
-				<li onClick={() => handleClick('soft-drinks')} className={activeId === 'soft-drinks' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('soft-drinks')}
+					className={activeId === 'soft-drinks' ? classes.active : ''}>
 					Soft Drinks
 				</li>
-				<li onClick={() => handleClick('beers')} className={activeId === 'beers' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('beers')}
+					className={activeId === 'beers' ? classes.active : ''}>
 					Beers
 				</li>
-				<li onClick={() => handleClick('kids-meal')} className={activeId === 'kids-meal' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('kids-meal')}
+					className={activeId === 'kids-meal' ? classes.active : ''}>
 					Kids Meal
 				</li>
-				<li onClick={() => handleClick('piri-piri')} className={activeId === 'piri-piri' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('piri-piri')}
+					className={activeId === 'piri-piri' ? classes.active : ''}>
 					Piri Piri
 				</li>
-				<li onClick={() => handleClick('dips')} className={activeId === 'dips' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('dips')}
+					className={activeId === 'dips' ? classes.active : ''}>
 					Dips
 				</li>
-				<li onClick={() => handleClick('desserts')} className={activeId === 'desserts' ? classes.active : ''}>
+				<li onClick={() =>
+					handleClick('desserts')}
+					className={activeId === 'desserts' ? classes.active : ''}>
 					Desserts
 				</li>
 

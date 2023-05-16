@@ -1,8 +1,8 @@
-import MealsMenuItem from './MealsMenuItem';
-import { useEffect, useState } from "react"
-import supabase from '../../../../supabase'
-import classes from './MealsMenuCategory.module.css'
-import Logo from '../../../../assets/images/bartsfood_logo_black_yellow.png'
+import React, { useEffect, useState } from "react";
+import MealsMenuItem from "./MealsMenuItem";
+import supabase from "../../../../supabase";
+import classes from "./MealsMenuCategory.module.css";
+import Logo from "../../../../assets/images/bartsfood_logo_black_yellow.png";
 
 
 

@@ -1,13 +1,13 @@
 footer {
 	padding: 3rem 0 1rem 0;
-	background-color: #efedea;
+	background-color: var(--tertiary-background-color);
 	font-size: 2rem;
 	font-weight: 800;
 }
 
 .container_main {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	max-width: 160rem;
 	justify-content: center;
 	justify-items: center;
@@ -44,9 +44,8 @@ footer {
 
 @media (max-width: 930px) {
 	.container_main {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		/* align-items: center; */
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 	}
 	.container_payment_img {
 		grid-row: 1;

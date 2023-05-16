@@ -34,7 +34,7 @@
 	cursor: pointer;
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color-darker);
-	color: white;
+	color: #ffffff;
 	width: 10rem;
 	height: 3rem;
 	font-weight: bold;

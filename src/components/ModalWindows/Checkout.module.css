@@ -12,7 +12,7 @@
 	justify-content: center;
 	background-color: transparent;
 	cursor: pointer;
-	color: grey;
+	color: #808080;
 }
 
 .form {
@@ -32,7 +32,7 @@
 	margin-bottom: 2.2rem;
 	margin-top: 0.5rem;
 	border-radius: 1.2rem;
-	border: 1px solid rgb(184, 184, 184);
+	border: 1px solid #b8b8b8;
 	margin-top: 1rem;
 }
 
@@ -41,20 +41,20 @@
 }
 
 .control input:focus {
-	background-color: rgba(0, 137, 250, 0.1);
-	border: 1px solid rgb(0, 137, 250);
+	background-color: var(--input-background-color);
+	border: 1px solid var(--input-border-color);
 	outline: none;
 }
 
 .invalid input {
-	border-color: #aa0b20;
-	background-color: #ffeff1;
+	border-color: var(--invalid-color);
+	background-color: var(--invalid-background-color);
 	margin-bottom: 0.8rem;
 	outline: none;
 }
 
 .invalid p {
-	color: #aa0b20;
+	color: var(--invalid-color);
 	margin-bottom: 2rem;
 	font-size: 1.2rem;
 	margin-left: 0.8rem;
@@ -65,7 +65,7 @@
 	display: flex;
 	margin-bottom: 2rem;
 	margin-top: 3rem;
-	border: 1px solid rgb(184, 184, 184);
+	border: 1px solid #b8b8b8;
 	padding: 1rem;
 	border-radius: 1.2rem;
 }
@@ -88,7 +88,7 @@
 	cursor: pointer;
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color-darker);
-	color: white;
+	color: #ffffff;
 	padding: 1.2rem 10.5rem;
 	font-weight: bold;
 	font-size: 1.5rem;

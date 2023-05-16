@@ -15,7 +15,6 @@
 	transform: translate(-50%, -50%);
 	background-color: var(--secondary-background-color);
 	color: black;
-	/* padding: 5rem 4rem; */
 	box-shadow: var(--box-shadow);
 	z-index: 30;
 	animation: slide-down 300ms ease-out forwards;

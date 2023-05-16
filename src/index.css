@@ -7,11 +7,19 @@
 
 	--primiary-background-color: #fafafa;
 	--secondary-background-color: #fff;
+	--tertiary-background-color: #efedea;
 	--primary-color: #d21312;
 	--primary-color-darker: #bd1110;
+	--invalid-color: #aa0b20;
+	--invalid-background-color: #ffeff1;
+	--input-background-color: #0089fa1a;
+	--input-border-color: #0089fa;
+	--meals_category_cative-color: #ffa500;
+	--paid_color: #f59f00;
+	--free_color: #37b24d;
 	--meal-name-color: #000;
 	--meal-description-color: #727272;
-	--border-color: rgb(206, 206, 206);
+	--border-color: #cecece;
 	--border-bottom-color: #d4d2d2;
 	--backdrop-color: rgba(0, 0, 0, 0.75);
 	--box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);

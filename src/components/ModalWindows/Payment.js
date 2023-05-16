@@ -138,7 +138,6 @@ const Payment = (props) => {
 				<form className={classes.form_container}>
 					<div className={classes.form_container_top}>
 						<div className={cardNumberControlClasses}>
-							{/* <label htmlFor='postcode'>Card Number</label> */}
 							<input
 								type='text'
 								placeholder="CARD NUMBER"
@@ -150,7 +149,6 @@ const Payment = (props) => {
 							{!formInputsValidity.cardNumber && <p> Invalid card number! Must be exactly 16 digits long. </p>}
 						</div>
 						<div className={cardHolderControlClasses}>
-							{/* <label htmlFor='postcode'>Card Holder</label> */}
 							<input
 								type='text'
 								placeholder="CARD HOLDER NAME"
@@ -162,7 +160,6 @@ const Payment = (props) => {
 					</div>
 					<div className={classes.card_exp_container}>
 						<div className={mothControlClasses}>
-							{/* <label htmlFor="month">Month</label> */}
 							<select id="month" name="month" ref={mothInputRef}>
 								<option value="" disabled selected >MM</option>
 								<option value="1">01</option>
@@ -181,7 +178,6 @@ const Payment = (props) => {
 							{!formInputsValidity.moth && <p> Choose month!</p>}
 						</div>
 						<div className={yearControlClasses}>
-							{/* <label htmlFor="year">Year</label> */}
 							<select className={classes.select} id="year" name="year" ref={yearInputRef}>
 								<option value="" disabled selected>YY</option>
 								<option value="23">23</option>
@@ -200,7 +196,6 @@ const Payment = (props) => {
 						</div>
 
 						<div className={ccvCodeControlClasses}>
-							{/* <label htmlFor='postcode'>CCV</label> */}
 							<input
 								type='tel'
 								maxLength="3"

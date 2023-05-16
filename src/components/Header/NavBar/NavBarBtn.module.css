@@ -1,13 +1,13 @@
 .nav_btn:link,
 .nav_btn:visited {
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .nav_btn:hover,
 .nav_btn:active {
-	color: orange;
+	color: #ffa500;
 	text-decoration: none;
 }
 

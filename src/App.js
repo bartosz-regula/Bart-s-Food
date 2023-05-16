@@ -1,14 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
-import Header from './components/Header/Header'
-import MainContainer from './components/MainSection/MainContainer'
-import Footer from './components/Footer/Footer'
-import CartProvider from './context/CartProvider'
-import Checkout
-	from './components/ModalWindows/Checkout'
-import Payment from './components/ModalWindows/Payment'
-import Confirmation from './components/ModalWindows/Confirmation'
-import CartModal from './components/ModalWindows/CartModal'
+import React, { useState } from 'react';
+import Header from './components/Header/Header';
+import MainContainer from './components/MainSection/MainContainer';
+import Footer from './components/Footer/Footer';
+import CartProvider from './context/CartProvider';
+import Checkout from './components/ModalWindows/Checkout';
+import Payment from './components/ModalWindows/Payment';
+import Confirmation from './components/ModalWindows/Confirmation';
+import CartModal from './components/ModalWindows/CartModal';
 
 const App = () => {
 
@@ -60,10 +58,6 @@ const App = () => {
 
 	return (
 		<CartProvider>
-			{/* <Checkout /> */}
-			{/* <Payment /> */}
-			{/* <Confirmation /> */}
-			{/* <CartModal /> */}
 			{checkoutIsShown &&
 				<Checkout
 					onCloseCheckout={hideCheckoutHandler}

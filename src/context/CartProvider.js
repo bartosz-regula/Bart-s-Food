@@ -8,18 +8,17 @@ const defaultCartState = {
 
 const cartReducer = (state, action) => {
 	if (action.type === 'ADD') {
-		const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount; //Cena za wszystkie sztuki tej tego samegoe meal
+		const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
 		console.log(updatedTotalAmount);
 
-		const exisitingCartItemIndex = state.items.findIndex((item) => item.id === action.item.id); // Sprawdza czy jest juz tak item jaki dodajemy -1/0
+		const exisitingCartItemIndex = state.items.findIndex((item) => item.id === action.item.id);
 		console.log(exisitingCartItemIndex);
 
-		const exisitingCartItem = state.items[exisitingCartItemIndex]; // Pokazuje który item już się tam znajduje, jeżeli taki jest
+		const exisitingCartItem = state.items[exisitingCartItemIndex];
 		console.log(exisitingCartItem);
 		let updatedItems;
 
-		// Jeżeli to jest true to:
-		//Wszystko pozsotaje to samo: id, name...Zmienia się tylko amount oraz price:
+
 		if (exisitingCartItem) {
 			const updatedItem = {
 				...exisitingCartItem,
@@ -28,11 +27,9 @@ const cartReducer = (state, action) => {
 			};
 			console.log(updatedItem);
 
-			// Wszystkie items dodane do koszyka bez względu na ilość
 			updatedItems = [...state.items];
 			console.log(updatedItems);
 
-			//Element o tym indexie [exisitingCartItemIndex] nadpisujemy tym: updatedItem
 			updatedItems[exisitingCartItemIndex] = updatedItem;
 			console.log(updatedItems[exisitingCartItemIndex]);
 		} else {
