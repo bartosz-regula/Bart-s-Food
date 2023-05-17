@@ -46,7 +46,7 @@ const Cart = (props) => {
 	discount = -(subtotalAmount * 0.2);
 	if (subtotalAmount >= 60) {
 	}
-	console.log(discount);
+
 	if (subtotalAmount >= 30) {
 		delivery = 0
 	} else {

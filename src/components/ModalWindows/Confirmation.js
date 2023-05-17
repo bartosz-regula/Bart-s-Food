@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import Modal from '../ModalWindows/Modal';
 import classes from '../ModalWindows/Confirmation.module.css';
 import Logo from '../../assets/images/bartsfood_logo_black_yellow.png';
@@ -18,10 +18,31 @@ const Confirmation = (props) => {
 	const [deliveryTime, setDeliveryTime] = useState('');
 	const cartCtx = useContext(CartContext);
 
+	const handleClearLocalStorage = () => {
+		localStorage.clear();
+	};
+
 	const closeConfirmation = () => {
-		props.onConfirm()
+		props.onConfirm();
+		handleClearLocalStorage();
 		cartCtx.clearCart();
 	}
+
+	const modalRef = useRef();
+
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (modalRef.current && !modalRef.current.contains(event.target)) {
+				closeConfirmation();
+			}
+		}
+
+		document.addEventListener('mousedown', handleClickOutside);
+
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [props]);
 
 	useEffect(() => {
 		function handleEscKeyPress(event) {
@@ -41,9 +62,10 @@ const Confirmation = (props) => {
 		setDeliveryTime(getCurrentTimePlus50());
 	}, []);
 
+
 	return (
 		<Modal>
-			<div className={classes.container}>
+			<div ref={modalRef} className={classes.container}>
 				<div className={classes.container_content}>
 					<h2>Payment Approved!</h2>
 					<p>Thank you for choosing our restaurant for your meal! </p>

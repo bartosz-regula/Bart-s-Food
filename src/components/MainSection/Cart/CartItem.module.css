@@ -41,13 +41,16 @@
 	justify-self: end;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+	.cart_item_summary .btn {
+		font-size: 2.2rem;
+	}
 	.item_name {
 		font-size: 1.4rem;
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 300px) {
 	.item_name {
 		font-size: 1.2rem;
 	}

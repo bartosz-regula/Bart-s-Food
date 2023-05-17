@@ -90,6 +90,12 @@
 		margin-bottom: -6vh;
 	}
 }
+@media (max-width: 500px) {
+	.cart_btn {
+		width: 12rem;
+		height: 3.7rem;
+	}
+}
 
 @media (max-height: 500px) {
 	.cart_btn {

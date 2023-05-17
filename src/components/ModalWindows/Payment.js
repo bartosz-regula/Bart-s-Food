@@ -31,6 +31,24 @@ const handleCcvChange = (event) => {
 
 const Payment = (props) => {
 
+	const modalRef = useRef();
+
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (modalRef.current && !modalRef.current.contains(event.target)) {
+				props.onBack();
+			}
+		}
+
+		document.addEventListener('mousedown', handleClickOutside);
+
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [props]);
+
+
+
 	useEffect(() => {
 		function handleEscKeyPress(event) {
 			if (event.key === 'Escape') {
@@ -122,7 +140,7 @@ const Payment = (props) => {
 
 	return (
 		<Modal className={classes.modal} >
-			<div className={classes.main_container}>
+			<div ref={modalRef} className={classes.main_container}>
 				<div>
 					<button onClick={props.onBack} className={classes.back_btn}><ion-icon name="chevron-back-outline"></ion-icon>
 					</button>
@@ -215,3 +233,5 @@ const Payment = (props) => {
 }
 
 export default Payment;
+
+

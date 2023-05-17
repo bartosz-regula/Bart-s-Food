@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar/NavBar';
 import classes from './Header.module.css';
-import videoBg from '../../assets/video/Mój film.mp4';
+import videoBg from '../../assets/video/pexels-darlene-alderson-7039149-1920x1080-25fps.mp4';
 import companyLogo from '../../assets/images/bartsfood_logo_yellow_stars.png';
 
 
@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<header className={classes.header_container}>
 			<div className={classes.video_bg_container}>
-				<video src={videoBg} autoPlay loop muted playsinline="true" disablePictureInPicture="true" className={classes.video_bg} />
+				<video src={videoBg} autoPlay loop muted playsInline={true} disablePictureInPicture={true} className={classes.video_bg} />
 				<div className={classes.video_overlay}></div>
 				<div className={classes.logo_container}>
 					<img src={companyLogo} alt="Logo" className={classes.logo} />
