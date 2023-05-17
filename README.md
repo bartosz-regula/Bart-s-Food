@@ -1,16 +1,24 @@
 # Bart's Food
 
-Bart's Food is a dummy project designed for ordering fast food. The project is developed and maintained by Bartosz Regula.
+Bart's Food is a dummy project designed for ordering fast food. The project is developed and maintained in React by Bartosz Regula.
 
 ## Table of Contents
 
 -   [Bart's Food](#barts-food)
     -   [Table of Contents](#table-of-contents)
+    -   [Technologies Used](#technologies-used)
     -   [Features](#features)
     -   [Installation](#installation)
     -   [Usage](#usage)
     -   [Contributing](#contributing)
     -   [License](#license)
+
+## Technologies Used
+
+-   HTML: Used for the structure and layout of the web pages.
+-   CSS: Used for styling and visual enhancements of the web pages.
+-   React: Used as the JavaScript library for building the user interface and managing the application state.
+-   Supabase: Used as the backend technology for data storage and retrieval.
 
 ## Features
 
