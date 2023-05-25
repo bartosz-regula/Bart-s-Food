@@ -1,24 +1,16 @@
 # Bart's Food
 
-Bart's Food is a dummy project designed for ordering fast food. The project is developed and maintained in React by Bartosz Regula.
+Bart's Food is a dummy project designed for ordering fast food. The project is developed and maintained by Bartosz Regula.
 
 ## Table of Contents
 
 -   [Bart's Food](#barts-food)
     -   [Table of Contents](#table-of-contents)
-    -   [Technologies Used](#technologies-used)
     -   [Features](#features)
     -   [Installation](#installation)
     -   [Usage](#usage)
     -   [Contributing](#contributing)
     -   [License](#license)
-
-## Technologies Used
-
--   HTML: Used for the structure and layout of the web pages.
--   CSS: Used for styling and visual enhancements of the web pages.
--   React: Used as the JavaScript library for building the user interface and managing the application state.
--   Supabase: Used as the backend technology for data storage and retrieval.
 
 ## Features
 
@@ -26,12 +18,12 @@ Bart's Food is a dummy project designed for ordering fast food. The project is d
 -   The website loads meals for the menu from an external Supabase database.
 -   The website allows users to add meals to their cart using the "Add" button.
 -   The cart functionality sums up the selected meals and provides options to increase the quantity using the "+" button or decrease it using the "-" button.
--   The total cost of selected meals automatically includes additional charges such as bag fee, service charge, and delivery fee.
+-   The total cost of selected meals automatically includes additional charges such as bag fees, service charges, and delivery fees.
 -   The cart dynamically displays the amount remaining for free delivery, which is applied to orders over £30.
--   For orders over £60, a discount of 25% is applied to the total cost. The cart also displays the amount remaining to qualify for the discount after achieving free delivery.
+-   For orders over £60, a discount of 20% is applied to the total cost. The cart also displays the amount remaining to qualify for the discount after achieving free delivery.
 -   The "Go to Checkout" button redirects users to a form where they can enter their details for order fulfillment.
 -   The checkout form includes validation to ensure accurate data entry. However, for the purposes of this dummy project, fictitious data can be entered. The "Go to payment" button redirects users to a form where they can enter their card details.
--   The payment form includes validation to ensure accurate data entry, as well as in checkout from fictitious data can be entered. The "Confirm Payment" button redirects users to a window with confirmation of the order and the time of its implementation, which is 50 minutes and is counted from the moment of placing the order.
+-   The payment form includes validation to ensure accurate data entry, as well as in checkout from fictitious data that can be entered. The "Confirm Payment" button redirects users to a window with confirmation of the order and the time of its implementation, which is 50 minutes and is counted from the moment of placing the order.
 -   After closing the confirmation window. The cart and data from local storage are cleared.
 
 ## Installation
